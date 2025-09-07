@@ -1634,7 +1634,7 @@ f_{\chi}\left(\vec{g},a,r\right)=\left(\frac{1}{\theta_{1}\left(x^{g}y^{a};q\rig
 \begin_inset Formula 
 \begin{align*}
 \mathcal{I}\left(y,n\right) & =\frac{1}{2}\sum_{\vec{m}\in\mathbb{Z}}\frac{1}{2\pi i}\int i\eta\left(q\right)^{4}\d u_{1}du_{2}\prod_{i=1}^{2}\frac{\theta_{1}\left(x_{i}^{2};q\right)\theta_{1}\left(x_{i}^{-2};q\right)}{\left(i\eta\left(q\right)\right)^{2}}\left(f_{\chi}\left(0,-2,2\right)\right)^{2}\\
- & \prod_{g_{1},g_{2}=2,0,-2}f_{\chi}\left(\left(g_{1},0\right),-1,1\right)f_{\chi}\left(\left(0,g_{2}\right),-1,1\right)\prod_{g_{1},g_{2}=\pm1}\left(f_{\chi}\left(\left(g_{1},g_{2}\right),1,0\right)\right)^{2}
+ & \prod_{g_{1},g_{2}=2,0,-2}f_{\chi}\left(\left(g_{1},0\right),-1,1\right)\prod_{g_{1},g_{2}=\pm1}f_{\chi}\left(\left(g_{1},g_{2}\right),1,0\right)
 \end{align*}
 
 \end_inset
