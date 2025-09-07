@@ -725,6 +725,15 @@ Field contents and charges,
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="4">
 <features tabularvalignment="middle">
@@ -935,10 +944,35 @@ Field contents and charges,
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Table of charges
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
  with superpotential
 \begin_inset Formula 
 \[
-W=\varphi^{2}Q^{2}+Q^{2}q.
+W=\tr\left(Q^{2}\right)q+\tr\left(\varphi^{2}\right)\tr\left(Q^{2}\right).
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\tr Q^{2}=\tr Q^{a}\sigma^{a}Q^{b}\sigma^{b}=Q^{a}Q^{b}\underbrace{\tr\sigma^{a}\sigma^{b}}_{=2\delta^{ab}}=2Q^{a}Q^{a}
 \]
 
 \end_inset
@@ -1061,13 +1095,39 @@ m\leq\frac{1}{2} & g_{\alpha}<0
 
 
 \begin_inset Formula 
-\[
-\mathcal{I}\left(y,n\right)=\frac{1}{2}\cdot\frac{1}{2\pi i}\int i\eta\left(q\right)^{2}\d u\frac{\theta_{1}\left(x^{2};q\right)\theta_{1}\left(x^{-2};q\right)}{i\eta\left(q\right)}\prod_{g=2,0,-2}f_{\chi}\left(g,-1,1\right)f_{\chi}\left(g,1,0\right)f_{\chi}\left(0,-2,2\right)
-\]
+\begin{align*}
+\mathcal{I}\left(y,n\right) & =\frac{1}{2}\cdot\frac{1}{2\pi i}\int i\eta\left(q\right)^{2}\d u\frac{\theta_{1}\left(x^{2};q\right)\theta_{1}\left(x^{-2};q\right)}{\left(i\eta\left(q\right)\right)^{2}}\prod_{g=2,0,-2}f_{\chi}\left(g,-1,1\right)f_{\chi}\left(g,1,0\right)f_{\chi}\left(0,-2,2\right)\\
+ & =\frac{1}{2}\cdot\frac{1}{2\pi i}\int i\eta\left(q\right)^{2}\d u\frac{\theta_{1}\left(x^{2};q\right)\theta_{1}\left(x^{-2};q\right)}{\left(i\eta\left(q\right)\right)^{2}}\prod_{g=2,0,-2}\left(\frac{i\eta\left(q\right)}{\theta_{1}\left(x^{-g}y^{-1};q\right)}\right)^{-gm-n}\left(\frac{i\eta\left(q\right)}{\theta_{1}\left(x^{g}y;q\right)}\right)^{gm+n+1}\left(\frac{i\eta\left(q\right)}{\theta_{1}\left(x^{g}y^{-2};q\right)}\right)^{-2n-1}\\
+ & =\frac{1}{2}\cdot\frac{1}{2\pi i}\int i\eta\left(q\right)^{2}\d u\frac{\theta_{1}\left(x^{2};q\right)\theta_{1}\left(x^{-2};q\right)}{\left(i\eta\left(q\right)\right)^{2}}\prod_{g=2,0,-2}\left(-\frac{i\eta\left(q\right)}{\theta_{1}\left(x^{g}y;q\right)}\right)^{-gm-n}\left(\frac{i\eta\left(q\right)}{\theta_{1}\left(x^{g}y;q\right)}\right)^{gm+n+1}\left(\frac{i\eta\left(q\right)}{\theta_{1}\left(x^{g}y^{-2};q\right)}\right)^{-2n-1}\\
+ & =\frac{1}{2}\cdot\frac{1}{2\pi i}\int i\eta\left(q\right)^{2}\d u\frac{\theta_{1}\left(x^{2};q\right)\theta_{1}\left(x^{-2};q\right)}{\left(i\eta\left(q\right)\right)^{2}}\prod_{g=2,0,-2}\left(-1\right)^{n}\frac{i\eta\left(q\right)}{\theta_{1}\left(x^{g}y;q\right)}\left(\frac{i\eta\left(q\right)}{\theta_{1}\left(x^{g}y^{-2};q\right)}\right)^{-2n-1}
+\end{align*}
 
 \end_inset
 
+For 
+\begin_inset Formula $n=0$
+\end_inset
 
+,
+\begin_inset Formula 
+\begin{align*}
+ & =\frac{1}{2}\cdot\frac{1}{2\pi i}\frac{\theta_{1}\left(y^{-2};q\right)}{\theta_{1}\left(y;q\right)}\int i\eta\left(q\right)^{2}\d u\frac{\theta_{1}\left(x^{2};q\right)\theta_{1}\left(x^{-2};q\right)}{\left(i\eta\left(q\right)\right)^{2}}\frac{\theta_{1}\left(x^{2}y^{-2};q\right)}{\theta_{1}\left(x^{2}y;q\right)}\frac{\theta_{1}\left(x^{-2}y^{-2};q\right)}{\theta_{1}\left(x^{-2}y;q\right)}\\
+ & =\frac{1}{2}\cdot\frac{1}{2\pi i}\frac{\theta_{1}\left(y^{-2};q\right)}{\theta_{1}\left(y;q\right)}\sum_{a,b=0,1}\int_{u=-\frac{1}{2}v+\frac{a+b\tau}{2}}i\eta\left(q\right)^{2}\d u\frac{\theta_{1}\left(x^{2};q\right)\theta_{1}\left(x^{-2};q\right)}{i\eta\left(q\right)}\frac{\theta_{1}\left(x^{2}y^{-2};q\right)}{\theta_{1}\left(x^{2}y;q\right)}\frac{\theta_{1}\left(x^{-2}y^{-2};q\right)}{\theta_{1}\left(x^{-2}y;q\right)}\\
+ & =\frac{1}{2}\cdot\frac{1}{2\pi i}\frac{\theta_{1}\left(y^{-2};q\right)}{\theta_{1}\left(y;q\right)}\sum_{a,b=0,1}\int_{u=-\frac{1}{2}v+\frac{a+b\tau}{2}}i\eta\left(q\right)^{2}\d u\frac{\theta_{1}\left(x^{2};q\right)\theta_{1}\left(x^{-2};q\right)}{\left(i\eta\left(q\right)\right)^{2}}\frac{\theta_{1}\left(x^{2}y^{-2};q\right)}{\theta_{1}\left(2u+v|\tau\right)}\frac{\theta_{1}\left(x^{-2}y^{-2};q\right)}{\theta_{1}\left(-2u+v|\tau\right)}\\
+ & =\frac{1}{2}\cdot\frac{1}{2\pi i}\frac{\theta_{1}\left(y^{-2};q\right)}{\theta_{1}\left(y;q\right)}\sum_{a,b=0,1}\int_{u=-v+a+b\tau}i\eta\left(q\right)^{2}\frac{\d u}{2}\frac{\theta_{1}\left(x;q\right)\theta_{1}\left(x^{-1};q\right)}{\left(i\eta\left(q\right)\right)^{2}}\frac{\theta_{1}\left(xy^{-2};q\right)}{\theta_{1}\left(u+v|\tau\right)}\frac{\theta_{1}\left(x^{-1}y^{-2};q\right)}{\theta_{1}\left(-u+v|\tau\right)}\\
+ & =\frac{1}{2}\cdot\frac{1}{2\pi i}\frac{\theta_{1}\left(y^{-2};q\right)}{\theta_{1}\left(y;q\right)}\sum_{a,b=0,1}\int_{u=0}i\eta\left(q\right)^{2}\frac{\d u}{2}\frac{\theta_{1}\left(u-v+a+b\tau\right)\theta_{1}\left(-u+v-a-b\tau\right)}{\left(i\eta\left(q\right)\right)^{2}}\frac{\theta_{1}\left(u+a+b\tau-3v\right)}{\theta_{1}\left(u+a+b\tau\right)}\frac{\theta_{1}\left(-u-a-b\tau-v\right)}{\theta_{1}\left(-u+2v-a-b\tau\right)}\\
+ & =\frac{1}{2}\cdot\frac{1}{2\pi i}\frac{\theta_{1}\left(y^{-2};q\right)}{\theta_{1}\left(y;q\right)}\sum_{a,b=0,1}\int_{u=0}i\eta\left(q\right)^{2}\frac{\d u}{2}\frac{\theta_{1}\left(u-v\right)\theta_{1}\left(-u+v\right)}{\left(i\eta\left(q\right)\right)^{2}}\frac{\theta_{1}\left(u-3v\right)}{\theta_{1}\left(u\right)}\frac{\theta_{1}\left(-u-v\right)}{\theta_{1}\left(-u+2v\right)}e^{-2\pi ib\left(u-v\right)-i\pi b^{2}\tau}e^{2\pi ib\left(-u+v\right)-i\pi b^{2}\tau}\\
+ & =\frac{1}{2}\cdot\frac{1}{2\pi i}\frac{\theta_{1}\left(y^{-2};q\right)}{\theta_{1}\left(y;q\right)}\sum_{a,b=0,1}\int_{u=0}i\eta\left(q\right)^{2}\frac{\d u}{2}\frac{\theta_{1}\left(u-v\right)\theta_{1}\left(-u+v\right)}{\left(i\eta\left(q\right)\right)^{2}}\frac{\theta_{1}\left(u-3v\right)}{\theta_{1}\left(u\right)}\frac{\theta_{1}\left(-u-v\right)}{\theta_{1}\left(-u+2v\right)}e^{-4\pi ib\left(u-v\right)-2\pi ib^{2}\tau}\\
+ & =\frac{1}{2}\frac{\theta_{1}\left(y^{-2};q\right)}{\theta_{1}\left(y;q\right)}\sum_{a,b=0,1}i\eta\left(q\right)^{2}\frac{1}{2}\frac{\theta_{1}\left(-v\right)\theta_{1}\left(v\right)}{i\eta\left(q\right)}\frac{\theta_{1}\left(-3v\right)}{1}\frac{1}{2\pi\eta^{4}\left(q\right)}\frac{\theta_{1}\left(-v\right)}{\theta_{1}\left(2v\right)}e^{-4\pi ib\left(u-v\right)-2\pi ib^{2}\tau}\\
+ & =\frac{1}{4\pi}\frac{\theta_{1}\left(y^{-2};q\right)}{\theta_{1}\left(y;q\right)}\sum_{a,b=0,1}\frac{1}{2}\frac{1}{\eta^{3}\left(q\right)}\frac{\theta_{1}\left(-3v\right)\theta_{1}^{3}\left(v\right)}{\theta_{1}\left(2v\right)}e^{4\pi ibv-2\pi ib^{2}\tau}\\
+ & =\frac{1}{4\pi}\frac{\theta_{1}\left(y^{-2};q\right)}{\theta_{1}\left(y;q\right)}\frac{1}{\eta^{3}\left(q\right)}\frac{\theta_{1}\left(-3v\right)\theta_{1}^{3}\left(v\right)}{\theta_{1}\left(2v\right)}\sum_{b=0,1}e^{4\pi ibv-2\pi ib^{2}\tau}\\
+ & =\frac{1}{4\pi}\frac{\theta_{1}\left(y^{-2};q\right)}{\theta_{1}\left(y;q\right)}\frac{1}{\eta^{3}\left(q\right)}\frac{\theta_{1}\left(-3v\right)\theta_{1}^{3}\left(v\right)}{\theta_{1}\left(2v\right)}\left(1+e^{4\pi iv-2\pi i\tau}\right)\\
+ & =\frac{1}{4\pi}\frac{1}{\eta^{3}\left(q\right)}\theta_{1}\left(3v\right)\theta_{1}^{2}\left(v\right)\left(1+y^{2}q^{-1}\right)
+\end{align*}
+
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Section

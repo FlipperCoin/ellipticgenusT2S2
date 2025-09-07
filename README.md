@@ -1,1 +1,0 @@
-# ellipticgenusT2S2
