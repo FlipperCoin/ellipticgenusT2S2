@@ -655,6 +655,7 @@ Dual
 \end_layout
 
 \begin_layout Standard
+Before activating fugacities:
 \begin_inset Formula 
 \[
 6\to\left(4,1\right)_{+1}+\left(1,2\right)_{-2}
@@ -677,6 +678,385 @@ Dual
 
 ?
 \begin_inset Newline newline
+\end_inset
+
+After fugacities:
+\begin_inset Formula 
+\[
+\chi_{\left(6,1\right)_{+2}}\left(a,\boldsymbol{f},c\right)=a^{+2}\left(f_{1}f_{2}+f_{1}f_{3}+f_{1}f_{4}+f_{2}f_{3}+f_{2}f_{4}+f_{3}f_{4}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\chi_{\left(1,1\right)_{-4}}\left(a,\boldsymbol{f},c\right)=a^{-4}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\chi_{\left(4,2\right)_{-1}}\left(a,\boldsymbol{f},c\right) & =a^{-1}\left(f_{1}+f_{2}+f_{3}+f_{4}\right)\left(c+c^{-1}\right)\\
+ & =a^{-1}f_{1}\left(c+c^{-1}\right)+a^{-1}f_{2}\left(c+c^{-1}\right)+a^{-1}f_{3}\left(c+c^{-1}\right)+a^{-1}f_{4}\left(c+c^{-1}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Compactification of 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ with flux 
+\begin_inset Formula $n=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Field contents and charges,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\varphi$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Q$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $U\left(1\right)_{R}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $U\left(1\right)_{f}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $SU\left(2\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\boldsymbol{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset Formula $\boldsymbol{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\boldsymbol{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+ with superpotential
+\begin_inset Formula 
+\[
+W=\varphi^{2}Q^{2}+Q^{2}q.
+\]
+
+\end_inset
+
+Calculating the index (0/100)
+\begin_inset Formula 
+\[
+\mathcal{I}\left(y,n\right)=\frac{1}{2}\sum_{m\in\mathbb{Z}}\frac{1}{2\pi i}\int i\eta\left(q\right)^{2}\d u\frac{\theta_{1}\left(x^{2};q\right)\theta_{1}\left(x^{-2};q\right)}{i\eta\left(q\right)}\prod_{g=2,0,-2}f_{\chi}\left(g,-1,1\right)f_{\chi}\left(g,1,0\right)f_{\chi}\left(0,-2,2\right),
+\]
+
+\end_inset
+
+where
+\begin_inset Formula 
+\[
+f_{\chi}\left(g,a,r\right)=\left(\frac{1}{\theta_{1}\left(x^{g}y^{a};q\right)}\right)^{gm+an-r+1}.
+\]
+
+\end_inset
+
+Poles contribute only for
+\begin_inset Formula 
+\[
+g_{\alpha}m+a_{\alpha}n-r_{\alpha}\geq0,\left|g_{\alpha}\right|=2\Rightarrow\begin{cases}
+m\geq\frac{1}{2}\left(-a_{\alpha}n+r_{\alpha}\right) & g_{\alpha}>0\\
+m\leq\frac{1}{2}\left(a_{\alpha}n-r_{\alpha}\right) & g_{\alpha}<0
+\end{cases},
+\]
+
+\end_inset
+
+or after plugging in our case of flavor/R charges
+\begin_inset Formula 
+\[
+\begin{cases}
+m\geq\frac{1}{2}\left(n+1\right) & g_{\alpha}>0\\
+m\leq\frac{1}{2}\left(-n-1\right) & g_{\alpha}<0
+\end{cases}\text{ for }\left(a,r\right)=\left(-1,1\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+m\geq-\frac{1}{2}n & g_{\alpha}>0\\
+m\leq\frac{1}{2}n & g_{\alpha}<0
+\end{cases}\text{ for }\left(a,r\right)=\left(1,0\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Formula $n=0$
+\end_inset
+
+ case (WRONG)
+\end_layout
+
+\begin_layout Standard
+We don't have any poles from 
+\begin_inset Formula $\left(-2,2\right)$
+\end_inset
+
+,
+ and we avoid poles coming from 
+\begin_inset Formula $\left(a,r\right)=\left(-1,1\right)$
+\end_inset
+
+.
+ For 
+\begin_inset Formula $\left(a,r\right)=\left(1,0\right)$
+\end_inset
+
+ we only have contribution from 
+\begin_inset Formula $m=0$
+\end_inset
+
+ so we get
+\begin_inset Formula 
+\[
+\mathcal{I}\left(y,n\right)=\frac{1}{2}\cdot\frac{1}{2\pi i}\int i\eta\left(q\right)^{2}\d u\frac{\theta_{1}\left(x^{2};q\right)\theta_{1}\left(x^{-2};q\right)}{i\eta\left(q\right)}\prod_{g=2,0,-2}f_{\chi}\left(g,-1,1\right)f_{\chi}\left(g,1,0\right)f_{\chi}\left(0,-2,2\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Formula $n=1$
+\end_inset
+
+ case
+\end_layout
+
+\begin_layout Standard
+We get a pole from 
+\begin_inset Formula $\left(a,r\right)=\left(1,0\right)$
+\end_inset
+
+ for 
+\begin_inset Formula $m=0$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+m\geq-\frac{1}{2} & g_{\alpha}>0\\
+m\leq\frac{1}{2} & g_{\alpha}<0
+\end{cases}\text{ for }\left(a,r\right)=\left(1,0\right)
+\]
+
 \end_inset
 
 
