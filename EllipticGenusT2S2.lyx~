@@ -1634,7 +1634,137 @@ f_{\chi}\left(\vec{g},a,r\right)=\left(\frac{1}{\theta_{1}\left(x^{g}y^{a};q\rig
 \begin_inset Formula 
 \begin{align*}
 \mathcal{I}\left(y,n\right) & =\frac{1}{2}\sum_{\vec{m}\in\mathbb{Z}}\frac{1}{2\pi i}\int i\eta\left(q\right)^{4}\d u_{1}du_{2}\prod_{i=1}^{2}\frac{\theta_{1}\left(x_{i}^{2};q\right)\theta_{1}\left(x_{i}^{-2};q\right)}{\left(i\eta\left(q\right)\right)^{2}}\left(f_{\chi}\left(0,-2,2\right)\right)^{2}\\
- & \prod_{g_{1},g_{2}=2,0,-2}f_{\chi}\left(\left(g_{1},0\right),-1,1\right)f_{\chi}\left(\left(0,g_{2}\right),-1,1\right)\prod_{g_{1},g_{2}=\pm1}f_{\chi}\left(\left(g_{1},g_{2}\right),1,0\right)^{2}
+ & \prod_{g_{1},g_{2}=2,0,-2}f_{\chi}\left(\left(g_{1},0\right),-1,1\right)f_{\chi}\left(\left(0,g_{2}\right),-1,1\right)\prod_{g_{1},g_{2}=\pm1}\left(f_{\chi}\left(\left(g_{1},g_{2}\right),1,0\right)\right)^{2}\\
+ & =\frac{1}{2}\sum_{\vec{m}\in\mathbb{Z}}\frac{1}{2\pi i}\int i\eta\left(q\right)^{4}\d u_{1}du_{2}\prod_{i=1}^{2}\frac{\theta_{1}\left(x_{i}^{2};q\right)\theta_{1}\left(x_{i}^{-2};q\right)}{\left(i\eta\left(q\right)\right)^{2}}\left(f_{\chi}\left(0,-2,2\right)\right)^{2}\\
+ & \prod_{g_{1},g_{2}=2,0,-2}\left(\frac{1}{\theta_{1}\left(x_{1}^{g_{1}}y^{-1};q\right)}\right)^{g_{1}m_{1}-n}\left(\frac{1}{\theta_{1}\left(x_{2}^{g_{2}}y^{-1};q\right)}\right)^{g_{2}m_{2}-n}\prod_{g_{1},g_{2}=\pm1}\left(\frac{1}{\theta_{1}\left(x_{1}^{g_{1}}x_{2}^{g_{2}}y;q\right)}\right)^{2\left(g_{1}m_{1}+g_{2}m_{2}+n+1\right)}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula $m_{1}=m_{2}=1,n=0$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\#\prod_{g_{1},g_{2}=2,0,-2}\left(\frac{1}{\theta_{1}\left(x_{1}^{g_{1}}y^{-1};q\right)}\right)^{g_{1}}\left(\frac{1}{\theta_{1}\left(x_{2}^{g_{2}}y^{-1};q\right)}\right)^{g_{2}}\prod_{g_{1},g_{2}=\pm1}\left(\frac{1}{\theta_{1}\left(x_{1}^{g_{1}}x_{2}^{g_{2}}y;q\right)}\right)^{2\left(g_{1}+g_{2}+1\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \frac{1}{2}\frac{1}{2\pi i}\int i\eta\left(q\right)^{4}\d u_{1}du_{2}\prod_{i=1}^{2}\frac{\theta_{1}\left(x_{i}^{2};q\right)\theta_{1}\left(x_{i}^{-2};q\right)}{\left(i\eta\left(q\right)\right)^{2}}\left(f_{\chi}\left(0,-2,2\right)\right)^{2}\\
+ & \left(\frac{1}{\theta_{1}\left(x_{1}^{-2}y^{-1};q\right)}\right)^{-2}\left(\frac{1}{\theta_{1}\left(x_{2}^{-2}y^{-1};q\right)}\right)^{-2}\left(\frac{1}{\theta_{1}\left(x_{1}^{-1}x_{2}^{-1}y;q\right)}\right)^{-2}\\
+ & \left(\frac{1}{\theta_{1}\left(x_{1}^{2}y^{-1};q\right)}\right)^{2}\left(\frac{1}{\theta_{1}\left(x_{2}^{2}y^{-1};q\right)}\right)^{2}\left(\frac{1}{\theta_{1}\left(x_{1}x_{2}y;q\right)}\right)^{6}\left(\frac{1}{\theta_{1}\left(x_{1}x_{2}^{-1}y;q\right)}\right)^{2}\left(\frac{1}{\theta_{1}\left(x_{1}^{-1}x_{2}y;q\right)}\right)^{2}
+\end{align*}
+
+\end_inset
+
+The charge covectors are 
+\begin_inset Formula $Q_{3}=\left(2,0\right),Q_{4}=\left(0,2\right),Q_{5}=\left(1,1\right),Q_{2}=\left(1,-1\right),Q_{1}=\left(-1,1\right)$
+\end_inset
+
+.
+ The hyperplanes are
+\begin_inset Formula 
+\[
+H_{1}:-x+y+v=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+H_{2}:x-y+v=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+H_{3}:2x-v=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+H_{4}:2y-v=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+H_{5}:x+y+v=0
+\]
+
+\end_inset
+
+where the identifications on 
+\begin_inset Formula $\mathfrak{M}$
+\end_inset
+
+ are realized.
+ Choose 
+\begin_inset Formula $\eta=\left(-\frac{1}{2},\frac{3}{2}\right)$
+\end_inset
+
+.
+ which is in the chambers relevant to 
+\begin_inset Formula $\text{Cone}\left(Q_{1},Q_{4}\right),\text{Cone}\left(Q_{1},Q_{3}\right),\text{Cone}\left(Q_{1},Q_{5}\right)$
+\end_inset
+
+.
+ The intersection between 
+\begin_inset Formula $H_{1},H_{4}$
+\end_inset
+
+ give 4 points
+\begin_inset Formula 
+\[
+x=\frac{a}{2}+\frac{b}{2}\tau+\frac{3}{2}v,y=\frac{1}{2}\left(v+a+b\tau\right),a,b=0,1,
+\]
+
+\end_inset
+
+the intersection between 
+\begin_inset Formula $H_{1},H_{3}$
+\end_inset
+
+ give 4 points
+\begin_inset Formula 
+\[
+y=\frac{1}{2}\left(a+b\tau\right),x=v+\frac{1}{2}\left(a+b\tau\right),a,b=0,1,
+\]
+
+\end_inset
+
+the intersection between 
+\begin_inset Formula $H_{1},H_{5}$
+\end_inset
+
+ give a single point
+\begin_inset Formula 
+\[
+x=0,y=-v.
+\]
+
+\end_inset
+
+The residue is
+\begin_inset Formula 
+\begin{align*}
+ & \frac{1}{2}\frac{1}{2\pi i}\int i\eta\left(q\right)^{4}\d u_{1}du_{2}\prod_{i=1}^{2}\frac{\theta_{1}\left(x_{i}^{2};q\right)\theta_{1}\left(x_{i}^{-2};q\right)}{\left(i\eta\left(q\right)\right)^{2}}\left(f_{\chi}\left(0,-2,2\right)\right)^{2}\\
+ & \left(\frac{1}{\theta_{1}\left(x_{1}^{-2}y^{-1};q\right)}\right)^{-2}\left(\frac{1}{\theta_{1}\left(x_{2}^{-2}y^{-1};q\right)}\right)^{-2}\left(\frac{1}{\theta_{1}\left(x_{1}^{-1}x_{2}^{-1}y;q\right)}\right)^{-2}\\
+ & \left(\frac{1}{\theta_{1}\left(x_{1}^{2}y^{-1};q\right)}\right)^{2}\left(\frac{1}{\theta_{1}\left(x_{2}^{2}y^{-1};q\right)}\right)^{2}\left(\frac{1}{\theta_{1}\left(x_{1}x_{2}y;q\right)}\right)^{6}\left(\frac{1}{\theta_{1}\left(x_{1}x_{2}^{-1}y;q\right)}\right)^{2}\left(\frac{1}{\theta_{1}\left(x_{1}^{-1}x_{2}y;q\right)}\right)^{2}
 \end{align*}
 
 \end_inset
