@@ -1740,11 +1740,12 @@ Note
 \begin_inset Formula $\alpha$
 \end_inset
 
- index which is related to the charge covectors (which actually also has 
+ index which is related to the charge covectors (which also has 
 \begin_inset Formula $r_{G}$
 \end_inset
 
- values).
+ values,
+ so it's a square matrix and an inverse makes sense).
  Then
 \begin_inset Formula 
 \[
@@ -2440,12 +2441,16 @@ Again going back to the example of the geometric phase in
 
  
 \begin_inset Formula 
-\[
-\nu\left(F_{1}\right)=\text{sign}\det\left\{ \kappa_{1}^{F_{1}}\kappa_{2}^{F_{1}}\right\} =\text{sign}\det\left\{ Q_{X},\left(Q_{X}+Q_{Y}+Q_{Z}\right)\right\} \underset{\text{column/row operations}}{\underbrace{=}}\text{sign}\det\left\{ Q_{X},\left(Q_{Y}+Q_{Z}\right)\right\} =\text{sign}\det\left[\begin{array}{cc}
+\begin{align*}
+\nu\left(F_{1}\right) & =\text{sign}\det\left\{ \kappa_{1}^{F_{1}}\kappa_{2}^{F_{1}}\right\} \\
+ & =\text{sign}\det\left\{ Q_{X},\left(Q_{X}+Q_{Y}+Q_{Z}\right)\right\} \\
+ & \underset{\text{column/row operations}}{\underbrace{=}}\text{sign}\det\left\{ Q_{X},\left(Q_{Y}+Q_{Z}\right)\right\} \\
+ & =\text{sign}\det\left[\begin{array}{cc}
 0 & 1\\
 2 & -2
-\end{array}\right]=-1.
-\]
+\end{array}\right]\\
+ & =-1.
+\end{align*}
 
 \end_inset
 
@@ -2494,7 +2499,7 @@ sub-chambers
 \end_inset
 
  sits inside then this is your sub-chamber.
- For an example,
+ For example,
  look at the orbifold phase of 
 \begin_inset Formula $4.2$
 \end_inset

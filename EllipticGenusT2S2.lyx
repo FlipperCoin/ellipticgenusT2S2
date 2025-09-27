@@ -1740,11 +1740,12 @@ Note
 \begin_inset Formula $\alpha$
 \end_inset
 
- index which is related to the charge covectors (which actually also has 
+ index which is related to the charge covectors (which also has 
 \begin_inset Formula $r_{G}$
 \end_inset
 
- values).
+ values,
+ so it's a square matrix and an inverse makes sense).
  Then
 \begin_inset Formula 
 \[
