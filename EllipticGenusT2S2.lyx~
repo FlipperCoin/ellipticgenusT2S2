@@ -1645,6 +1645,426 @@ f_{\chi}\left(\vec{g},a,r\right)=\left(\frac{1}{\theta_{1}\left(x^{g}y^{a};q\rig
 \end_layout
 
 \begin_layout Subsection*
+Jeffrey-Kirwan Residue
+\end_layout
+
+\begin_layout Standard
+We write the covectors with 
+\begin_inset Formula $Q_{x,y}=\left(x,y\right)$
+\end_inset
+
+,
+ e.g.
+ 
+\begin_inset Formula $Q_{2,0}$
+\end_inset
+
+ is the covector 
+\begin_inset Formula $\left(2,0\right)$
+\end_inset
+
+.
+ We have
+\begin_inset Formula 
+\[
+\left(2,0\right),\left(0,2\right),\left(-2,0\right),\left(0,-2\right),\left(-1,1\right)\left(-1,-1\right),\left(1,-1\right)\left(1,1\right)
+\]
+
+\end_inset
+
+Similarly 
+\begin_inset Formula $H_{x,y}$
+\end_inset
+
+ is the hyperplane associated to the covector 
+\begin_inset Formula $Q_{x,y}$
+\end_inset
+
+,
+ where if several hyperplanes are relevant we use 
+\begin_inset Formula $H_{x,y}^{a,b}$
+\end_inset
+
+ where 
+\begin_inset Formula $a,b$
+\end_inset
+
+ are the integers showing up in 
+\begin_inset Formula $a+b\tau$
+\end_inset
+
+.
+ Each hypeplane is actually a singularity only if the power of the function is positive.
+\begin_inset Formula 
+\begin{align*}
+ & H_{2,0}^{a,b}: &  & 2\left(u_{1}+\frac{1}{2}\left(a+b\tau\right)\right)-v=0\mod{a+b\tau}\\
+ & \text{condition:} &  & 2m_{1}-n>0\\
+ & H_{-2,0}^{a,b}: &  & -2\left(u_{1}+\frac{1}{2}\left(a+b\tau\right)\right)-v=0\mod{a+b\tau}\\
+ & \text{condition:} &  & -2m_{1}-n>0\\
+ & H_{0,2}^{a,b}: &  & 2\left(u_{2}+\frac{1}{2}\left(a+b\tau\right)\right)-v=0\mod{a+b\tau}\\
+ & \text{condition:} &  & 2m_{2}-n>0\\
+ & H_{0,-2}^{a,b}: &  & -2\left(u_{2}+\frac{1}{2}\left(a+b\tau\right)\right)-v=0\mod{a+b\tau}\\
+ & \text{condition:} &  & -2m_{2}-n>0\\
+ & H_{1,1}: &  & u_{1}+u_{2}+v=0\\
+ & \text{condition:} &  & m_{1}+m_{2}+n+1>0\\
+ & H_{1,-1}: &  & u_{1}-u_{2}+v=0\\
+ & \text{condition:} &  & m_{1}-m_{2}+n+1>0\\
+ & H_{-1,1}: &  & -u_{1}+u_{2}+v=0\\
+ & \text{condition:} &  & -m_{1}+m_{2}+n+1>0\\
+ & H_{-1,-1}: &  & -u_{1}-u_{2}+v=0\\
+ & \text{condition:} &  & -m_{1}-m_{2}+n+1>0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Region 1
+\end_layout
+
+\begin_layout Standard
+For 
+\begin_inset Formula $m_{1}<m_{2}<0$
+\end_inset
+
+ choose 
+\begin_inset Formula $\vec{\eta}=-\vec{m}$
+\end_inset
+
+ which promises truncation of sum.
+ All the cones that 
+\begin_inset Formula $\eta$
+\end_inset
+
+ sits in are 
+\begin_inset Formula 
+\[
+\text{Cone}\left(Q_{2,0},Q_{1,1}\right),\text{Cone}\left(Q_{2,0},Q_{0,2}\right),\text{Cone}\left(Q_{2,0},Q_{-1,1}\right),\text{Cone}\left(Q_{1,-1},Q_{1,1}\right),\text{Cone}\left(Q_{1,-1},Q_{2,0}\right),\text{Cone}\left(Q_{0,-2},Q_{1,1}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+For 
+\begin_inset Formula $\text{Cone}\left(Q_{2,0},Q_{1,1}\right)$
+\end_inset
+
+ we have 
+\begin_inset Formula $H_{2,0}^{a,b}\cap H_{1,1}$
+\end_inset
+
+ which gives 4 points 
+\begin_inset Formula $u_{1}=\frac{1}{2}\left(v-a-b\tau\right)$
+\end_inset
+
+,
+ 
+\begin_inset Formula $u_{2}=-u_{1}-v=-\frac{3}{2}v+\frac{1}{2}\left(a+b\tau\right)$
+\end_inset
+
+ for 
+\begin_inset Formula $a,b=0,1$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+For 
+\begin_inset Formula $\text{Cone}\left(Q_{2,0},Q_{0,2}\right)$
+\end_inset
+
+ we have 
+\begin_inset Formula $H_{2,0}^{a,b}\cap H_{0,2}^{a,b}$
+\end_inset
+
+ which gives 16 points 
+\begin_inset Formula $u_{1}=\frac{1}{2}\left(v-a-b\tau\right)$
+\end_inset
+
+,
+ 
+\begin_inset Formula $u_{2}=\frac{1}{2}\left(v-c-d\tau\right)$
+\end_inset
+
+ for 
+\begin_inset Formula $a,b,c,d=0,1$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+For 
+\begin_inset Formula $\text{Cone}\left(Q_{2,0},Q_{-1,1}\right)$
+\end_inset
+
+ we have 
+\begin_inset Formula $H_{2,0}^{a,b}\cap H_{-1,1}$
+\end_inset
+
+ which gives 4 points 
+\begin_inset Formula $u_{1}=\frac{1}{2}\left(v-a-b\tau\right)$
+\end_inset
+
+,
+ 
+\begin_inset Formula $u_{2}=u_{1}-v=-\frac{1}{2}v-\frac{1}{2}\left(a+b\tau\right)$
+\end_inset
+
+ for 
+\begin_inset Formula $a,b=0,1$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+For 
+\begin_inset Formula $\text{Cone}\left(Q_{1,-1},Q_{1,1}\right)$
+\end_inset
+
+ we have 
+\begin_inset Formula $H_{1,-1}\cap H_{1,1}$
+\end_inset
+
+ which gives 1 point 
+\begin_inset Formula $\left(-v,0\right)$
+\end_inset
+
+ because 
+\begin_inset Formula $u_{1}=u_{2}-v$
+\end_inset
+
+,
+ 
+\begin_inset Formula $u_{2}=-u_{1}-v=-u_{2}\Rightarrow u_{2}=0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+For 
+\begin_inset Formula $\text{Cone}\left(Q_{1,-1},Q_{2,0}\right)$
+\end_inset
+
+ we have 
+\begin_inset Formula $H_{1,-1}\cap H_{2,0}^{a,b}$
+\end_inset
+
+ which gives 4 points 
+\begin_inset Formula $u_{1}=\frac{1}{2}\left(v-a-b\tau\right)$
+\end_inset
+
+,
+ 
+\begin_inset Formula $u_{2}=u_{1}+v=\frac{3}{2}v-\frac{1}{2}\left(a+b\tau\right)$
+\end_inset
+
+ for 
+\begin_inset Formula $a,b=0,1$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+For 
+\begin_inset Formula $\text{Cone}\left(Q_{0,-2},Q_{1,1}\right)$
+\end_inset
+
+ we have 
+\begin_inset Formula $H_{0,-2}^{a,b}\cap H_{1,1}$
+\end_inset
+
+ which gives 4 points 
+\begin_inset Formula $u_{2}=-\frac{1}{2}\left(v+a+b\tau\right)$
+\end_inset
+
+,
+ 
+\begin_inset Formula $u_{1}=-u_{2}-v=-\frac{1}{2}v+\frac{1}{2}\left(a+b\tau\right)$
+\end_inset
+
+ for 
+\begin_inset Formula $a,b=0,1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+For general 
+\begin_inset Formula $v$
+\end_inset
+
+ there is no degeneracy - only 2 hyperplanes intersect at each point.
+ This means there are only two flags for each point,
+ and only one of them is going to be relevant as the subchambers will cut the chamber exactly in the middle.
+ The range of 
+\begin_inset Formula $\vec{m}$
+\end_inset
+
+ for each cone (limiting to 
+\begin_inset Formula $m_{1}<m_{2}<0$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $2m_{1}-n>0$
+\end_inset
+
+,
+ 
+\begin_inset Formula $m_{1}+m_{2}+n+1>0$
+\end_inset
+
+ give 
+\begin_inset Formula $m_{1}>\frac{1}{2}n$
+\end_inset
+
+,
+ 
+\begin_inset Formula $m_{2}>-m_{1}-n-1>-3m_{1}-1\underset{-m>0}{\underbrace{>}}-1$
+\end_inset
+
+.
+ This condition is never satisfied.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $2m_{1}-n>0$
+\end_inset
+
+,
+ 
+\begin_inset Formula $2m_{2}-n>0$
+\end_inset
+
+ give 
+\begin_inset Formula $m_{1},m_{2}>\frac{1}{2}n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $2m_{1}-n>0$
+\end_inset
+
+,
+ 
+\begin_inset Formula $-m_{1}+m_{2}+n+1>0$
+\end_inset
+
+ give 
+\begin_inset Formula $m_{1}>\frac{1}{2}n$
+\end_inset
+
+ which means 
+\begin_inset Formula $n$
+\end_inset
+
+ must be negative and 
+\begin_inset Formula $m_{2}>m_{1}-n-1>-\frac{1}{2}n-1\underset{-n\geq1}{\underbrace{\geq}}-\frac{1}{2}$
+\end_inset
+
+ which is never satisfied.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $m_{1}-m_{2}+n+1>0$
+\end_inset
+
+,
+ 
+\begin_inset Formula $m_{1}+m_{2}+n+1>0$
+\end_inset
+
+,
+ use Mathematica to find the points.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $m_{1}-m_{2}+n+1>0$
+\end_inset
+
+,
+ 
+\begin_inset Formula $2m_{1}-n>0$
+\end_inset
+
+.
+ Get 
+\begin_inset Formula $m_{1}<m_{2}<m_{1}+n+1<3m_{1}+1$
+\end_inset
+
+ but 
+\begin_inset Formula $m_{1}$
+\end_inset
+
+ is at least 
+\begin_inset Formula $-1$
+\end_inset
+
+ or lower so can't satisfy 
+\begin_inset Formula $m_{1}<m_{2}<-3\left|m_{1}\right|+1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $-2m_{2}-n>0$
+\end_inset
+
+,
+ 
+\begin_inset Formula $m_{1}+m_{2}+n+1>0$
+\end_inset
+
+.
+ Get 
+\begin_inset Formula $m_{1}<m_{2}<-\frac{1}{2}n$
+\end_inset
+
+ but 
+\begin_inset Formula $m_{1}>-m_{2}-n-1>-\frac{1}{2}n-1$
+\end_inset
+
+ which can't be satisfied.
+\end_layout
+
+\begin_layout Subsection*
 truncation of sum (wrong but prob on the right path,
  I did this before learning JK-Res properly)
 \end_layout
@@ -2499,7 +2919,7 @@ sub-chambers
 \end_inset
 
  sits inside then this is your sub-chamber.
- For example,
+ For an example,
  look at the orbifold phase of 
 \begin_inset Formula $4.2$
 \end_inset

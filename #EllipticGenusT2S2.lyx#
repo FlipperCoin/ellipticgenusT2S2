@@ -1958,11 +1958,7 @@ For general
 \end_inset
 
 .
- This condition is 
-\series bold
-never satisfied
-\series default
-.
+ This condition is never satisfied.
 \end_layout
 
 \begin_layout Enumerate
@@ -2002,11 +1998,7 @@ never satisfied
 \begin_inset Formula $m_{2}>m_{1}-n-1>-\frac{1}{2}n-1\underset{-n\geq1}{\underbrace{\geq}}-\frac{1}{2}$
 \end_inset
 
- which is 
-\series bold
-never satisfied
-\series default
-.
+ which is never satisfied.
 \end_layout
 
 \begin_layout Enumerate
@@ -2044,11 +2036,7 @@ never satisfied
 \begin_inset Formula $-1$
 \end_inset
 
- or lower so 
-\series bold
-can't satisfy
-\series default
- 
+ or lower so can't satisfy 
 \begin_inset Formula $m_{1}<m_{2}<-3\left|m_{1}\right|+1$
 \end_inset
 
@@ -2073,11 +2061,7 @@ can't satisfy
 \begin_inset Formula $m_{1}>-m_{2}-n-1>-\frac{1}{2}n-1$
 \end_inset
 
- which 
-\series bold
-can't be satisfied
-\series default
-.
+ which can't be sat
 \end_layout
 
 \begin_layout Subsection*
