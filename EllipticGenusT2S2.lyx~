@@ -1633,10 +1633,42 @@ f_{\chi}\left(\vec{g},a,r\right)=\left(\frac{1}{\theta_{1}\left(x^{g}y^{a};q\rig
 
 \begin_inset Formula 
 \begin{align*}
-\mathcal{I}\left(y,n\right) & =\frac{1}{2}\sum_{\vec{m}\in\mathbb{Z}}\frac{1}{2\pi i}\int i\eta\left(q\right)^{4}\d u_{1}du_{2}\prod_{i=1}^{2}\frac{\theta_{1}\left(x_{i}^{2};q\right)\theta_{1}\left(x_{i}^{-2};q\right)}{\left(i\eta\left(q\right)\right)^{2}}\left(f_{\chi}\left(0,-2,2\right)\right)^{2}\\
+\mathcal{I}\left(y,n\right) & =\frac{1}{4}\sum_{\vec{m}\in\mathbb{Z}}\frac{1}{\left(2\pi i\right)^{2}}\int\left(i\right)^{2}\eta\left(q\right)^{4}\d u_{1}du_{2}\prod_{i=1}^{2}\frac{\theta_{1}\left(x_{i}^{2};q\right)\theta_{1}\left(x_{i}^{-2};q\right)}{\left(i\eta\left(q\right)\right)^{2}}\left(f_{\chi}\left(0,-2,2\right)\right)^{2}\\
  & \prod_{g_{1},g_{2}=2,0,-2}f_{\chi}\left(\left(g_{1},0\right),-1,1\right)f_{\chi}\left(\left(0,g_{2}\right),-1,1\right)\prod_{g_{1},g_{2}=\pm1}\left(f_{\chi}\left(\left(g_{1},g_{2}\right),1,0\right)\right)^{2}\\
- & =\frac{1}{2}\sum_{\vec{m}\in\mathbb{Z}}\frac{1}{2\pi i}\int i\eta\left(q\right)^{4}\d u_{1}du_{2}\prod_{i=1}^{2}\frac{\theta_{1}\left(x_{i}^{2};q\right)\theta_{1}\left(x_{i}^{-2};q\right)}{\left(i\eta\left(q\right)\right)^{2}}\left(f_{\chi}\left(0,-2,2\right)\right)^{2}\\
- & \prod_{g_{1},g_{2}=2,0,-2}\left(\frac{1}{\theta_{1}\left(x_{1}^{g_{1}}y^{-1};q\right)}\right)^{g_{1}m_{1}-n}\left(\frac{1}{\theta_{1}\left(x_{2}^{g_{2}}y^{-1};q\right)}\right)^{g_{2}m_{2}-n}\prod_{g_{1},g_{2}=\pm1}\left(\frac{1}{\theta_{1}\left(x_{1}^{g_{1}}x_{2}^{g_{2}}y;q\right)}\right)^{2\left(g_{1}m_{1}+g_{2}m_{2}+n+1\right)}
+ & =\frac{1}{4}\sum_{\vec{m}\in\mathbb{Z}}\frac{1}{\left(2\pi\right)^{2}}\int\eta\left(q\right)^{4}\d u_{1}du_{2}\prod_{i=1}^{2}\frac{\theta_{1}\left(x_{i}^{2};q\right)\theta_{1}\left(x_{i}^{-2};q\right)}{\left(i\eta\left(q\right)\right)^{2}}\left(f_{\chi}\left(0,-2,2\right)\right)^{2}\\
+ & \prod_{g_{1},g_{2}=2,0,-2}\left(\frac{1}{\theta_{1}\left(x_{1}^{g_{1}}y^{-1};q\right)}\right)^{g_{1}m_{1}-n}\left(\frac{1}{\theta_{1}\left(x_{2}^{g_{2}}y^{-1};q\right)}\right)^{g_{2}m_{2}-n}\prod_{g_{1},g_{2}=\pm1}\left(\frac{1}{\theta_{1}\left(x_{1}^{g_{1}}x_{2}^{g_{2}}y;q\right)}\right)^{2\left(g_{1}m_{1}+g_{2}m_{2}+n+1\right)}m_{1}<m_{2}<0\\
+ & =\frac{1}{4}\sum_{i=1}^{8}\sum_{\vec{m}\in D_{i}}\sum_{\vec{u}\in U^{*}}I\left(m_{1},m_{2},u_{1}^{*},u_{2}^{*}\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+D_{2}=\left\{ \left(m_{1},-m_{2}\right):\left(m_{1},m_{2}\right)\in D_{1}\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+D_{3}=\left\{ \left(m_{2},m_{1}\right):\left(m_{1},m_{2}\right)\in D_{1}\right\} 
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+I\left(m_{1},m_{2},u_{1}^{*},u_{2}^{*}\right) & =\frac{1}{2}\frac{1}{2\pi i}\int i\eta\left(q\right)^{4}\d u_{1}du_{2}\prod_{i=1}^{2}\frac{\theta_{1}\left(x_{i}^{2};q\right)\theta_{1}\left(x_{i}^{-2};q\right)}{\left(i\eta\left(q\right)\right)^{2}}\left(f_{\chi}\left(0,-2,2\right)\right)^{2}\\
+ & \prod_{g_{1},g_{2}=2,0,-2}\left(\frac{1}{\theta_{1}\left(x_{1}^{g_{1}}y^{-1};q\right)}\right)^{g_{1}m_{1}-n}\left(\frac{1}{\theta_{1}\left(x_{2}^{g_{2}}y^{-1};q\right)}\right)^{g_{2}m_{2}-n}\prod_{g_{1},g_{2}=\pm1}\left(\frac{1}{\theta_{1}\left(x_{1}^{g_{1}}x_{2}^{g_{2}}y;q\right)}\right)^{2\left(g_{1}m_{1}+g_{2}m_{2}+n+1\right)}\\
+I\left(m_{2},m_{1},u_{1}^{*},u_{2}^{*}\right) & =\frac{1}{2}\frac{1}{2\pi i}\int i\eta\left(q\right)^{4}\d u_{1}du_{2}\prod_{i=1}^{2}\frac{\theta_{1}\left(x_{i}^{2};q\right)\theta_{1}\left(x_{i}^{-2};q\right)}{\left(i\eta\left(q\right)\right)^{2}}\left(f_{\chi}\left(0,-2,2\right)\right)^{2}\\
+ & \prod_{g_{1},g_{2}=2,0,-2}\left(\frac{1}{\theta_{1}\left(x_{1}^{g_{1}}y^{-1};q\right)}\right)^{g_{1}m_{2}-n}\left(\frac{1}{\theta_{1}\left(x_{2}^{g_{2}}y^{-1};q\right)}\right)^{g_{2}m_{1}-n}\prod_{g_{1},g_{2}=\pm1}\left(\frac{1}{\theta_{1}\left(x_{1}^{g_{1}}x_{2}^{g_{2}}y;q\right)}\right)^{2\left(g_{1}m_{2}+g_{2}m_{1}+n+1\right)}\\
+ & =\frac{1}{2}\frac{1}{2\pi i}\int_{u_{1}=u_{1}^{*},u_{2}=u_{2}^{*}}i\eta\left(q\right)^{4}\d u_{1}du_{2}\prod_{i=1}^{2}\frac{\theta_{1}\left(x_{i}^{2};q\right)\theta_{1}\left(x_{i}^{-2};q\right)}{\left(i\eta\left(q\right)\right)^{2}}\left(f_{\chi}\left(0,-2,2\right)\right)^{2}\\
+ & \prod_{g_{1},g_{2}=2,0,-2}\left(\frac{1}{\theta_{1}\left(x_{1}^{g_{2}}y^{-1};q\right)}\right)^{g_{2}m_{2}-n}\left(\frac{1}{\theta_{1}\left(x_{2}^{g_{1}}y^{-1};q\right)}\right)^{g_{1}m_{1}-n}\prod_{g_{1},g_{2}=\pm1}\left(\frac{1}{\theta_{1}\left(x_{1}^{g_{2}}x_{2}^{g_{1}}y;q\right)}\right)^{2\left(g_{2}m_{2}+g_{1}m_{1}+n+1\right)}\\
+ & =\frac{1}{2}\frac{1}{2\pi i}\int i\eta\left(q\right)^{4}\d u_{1}du_{2}\prod_{i=1}^{2}\frac{\theta_{1}\left(x_{i}^{2};q\right)\theta_{1}\left(x_{i}^{-2};q\right)}{\left(i\eta\left(q\right)\right)^{2}}\left(f_{\chi}\left(0,-2,2\right)\right)^{2}\\
+ & \prod_{g_{1},g_{2}=2,0,-2}\left(\frac{1}{\theta_{1}\left(x_{1}^{g_{2}}y^{-1};q\right)}\right)^{g_{2}m_{2}-n}\left(\frac{1}{\theta_{1}\left(x_{2}^{g_{1}}y^{-1};q\right)}\right)^{g_{1}m_{1}-n}\prod_{g_{1},g_{2}=\pm1}\left(\frac{1}{\theta_{1}\left(x_{1}^{g_{2}}x_{2}^{g_{1}}y;q\right)}\right)^{2\left(g_{2}m_{2}+g_{1}m_{1}+n+1\right)}
 \end{align*}
 
 \end_inset
@@ -1726,7 +1758,7 @@ Region 1
 
 \begin_layout Standard
 For 
-\begin_inset Formula $m_{1}<m_{2}<0$
+\begin_inset Formula $m_{1}\leq m_{2}<0$
 \end_inset
 
  choose 
@@ -1741,7 +1773,7 @@ For
  sits in are 
 \begin_inset Formula 
 \[
-\text{Cone}\left(Q_{2,0},Q_{1,1}\right),\text{Cone}\left(Q_{2,0},Q_{0,2}\right),\text{Cone}\left(Q_{2,0},Q_{-1,1}\right),\text{Cone}\left(Q_{1,-1},Q_{1,1}\right),\text{Cone}\left(Q_{1,-1},Q_{2,0}\right),\text{Cone}\left(Q_{0,-2},Q_{1,1}\right).
+\text{Cone}\left(Q_{2,0},Q_{1,1}\right),\text{Cone}\left(Q_{2,0},Q_{0,2}\right),\text{Cone}\left(Q_{2,0},Q_{-1,1}\right),\text{Cone}\left(Q_{1,-1},Q_{1,1}\right),\text{Cone}\left(Q_{1,-1},Q_{0,2}\right),\text{Cone}\left(Q_{0,-2},Q_{1,1}\right).
 \]
 
 \end_inset
@@ -1868,20 +1900,20 @@ For
 
 \begin_layout Enumerate
 For 
-\begin_inset Formula $\text{Cone}\left(Q_{1,-1},Q_{2,0}\right)$
+\begin_inset Formula $\text{Cone}\left(Q_{1,-1},Q_{0,2}\right)$
 \end_inset
 
  we have 
-\begin_inset Formula $H_{1,-1}\cap H_{2,0}^{a,b}$
+\begin_inset Formula $H_{1,-1}\cap H_{0,2}^{a,b}$
 \end_inset
 
  which gives 4 points 
-\begin_inset Formula $u_{1}=\frac{1}{2}\left(v-a-b\tau\right)$
+\begin_inset Formula $u_{2}=\frac{1}{2}\left(v-a-b\tau\right)$
 \end_inset
 
 ,
  
-\begin_inset Formula $u_{2}=u_{1}+v=\frac{3}{2}v-\frac{1}{2}\left(a+b\tau\right)$
+\begin_inset Formula $u_{1}=u_{2}-v=-\frac{1}{2}\left(v+a+b\tau\right)$
 \end_inset
 
  for 
@@ -1933,7 +1965,7 @@ For general
 \end_inset
 
  for each cone (limiting to 
-\begin_inset Formula $m_{1}<m_{2}<0$
+\begin_inset Formula $m_{1}\leq m_{2}<0$
 \end_inset
 
 )
@@ -1958,7 +1990,11 @@ For general
 \end_inset
 
 .
- This condition is never satisfied.
+ This condition is 
+\series bold
+never satisfied
+\series default
+.
 \end_layout
 
 \begin_layout Enumerate
@@ -1972,6 +2008,11 @@ For general
 
  give 
 \begin_inset Formula $m_{1},m_{2}>\frac{1}{2}n$
+\end_inset
+
+.
+ This will contribute for 
+\begin_inset Formula $n<0$
 \end_inset
 
 .
@@ -1998,7 +2039,11 @@ For general
 \begin_inset Formula $m_{2}>m_{1}-n-1>-\frac{1}{2}n-1\underset{-n\geq1}{\underbrace{\geq}}-\frac{1}{2}$
 \end_inset
 
- which is never satisfied.
+ which is 
+\series bold
+never satisfied
+\series default
+.
 \end_layout
 
 \begin_layout Enumerate
@@ -2012,6 +2057,11 @@ For general
 
 ,
  use Mathematica to find the points.
+ This will contribute for 
+\begin_inset Formula $n>0$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Enumerate
@@ -2020,26 +2070,30 @@ For general
 
 ,
  
-\begin_inset Formula $2m_{1}-n>0$
+\begin_inset Formula $2m_{2}-n>0$
 \end_inset
 
 .
  Get 
-\begin_inset Formula $m_{1}<m_{2}<m_{1}+n+1<3m_{1}+1$
+\begin_inset Formula $m_{2}>\frac{1}{2}n$
 \end_inset
 
- but 
-\begin_inset Formula $m_{1}$
+ 
+\begin_inset Formula $\Rightarrow$
 \end_inset
 
- is at least 
-\begin_inset Formula $-1$
+ 
+\begin_inset Formula $-m_{2}<-\frac{1}{2}n$
 \end_inset
 
- or lower so can't satisfy 
-\begin_inset Formula $m_{1}<m_{2}<-3\left|m_{1}\right|+1$
+ so 
+\begin_inset Formula $m_{2}+\frac{1}{2}n+1\geq m_{1}+\frac{1}{2}n+1>m_{1}-m_{2}+n+1>0$
 \end_inset
 
+ bla bla 
+\series bold
+can't satisfy
+\series default
 .
 \end_layout
 
@@ -2054,14 +2108,193 @@ For general
 
 .
  Get 
-\begin_inset Formula $m_{1}<m_{2}<-\frac{1}{2}n$
+\begin_inset Formula $m_{1}\leq m_{2}<-\frac{1}{2}n$
 \end_inset
 
  but 
 \begin_inset Formula $m_{1}>-m_{2}-n-1>-\frac{1}{2}n-1$
 \end_inset
 
- which can't be satisfied.
+ so 
+\begin_inset Formula $-\frac{1}{2}n-1<m_{1}<-\frac{1}{2}n$
+\end_inset
+
+ which 
+\series bold
+can't be satisfied
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+Now for the singular case of 
+\begin_inset Formula $m_{1}<0$
+\end_inset
+
+ and 
+\begin_inset Formula $m_{2}=0$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $2m_{1}-n>0$
+\end_inset
+
+,
+ 
+\begin_inset Formula $m_{1}+n+1>0$
+\end_inset
+
+ give 
+\begin_inset Formula $m_{1}>\frac{1}{2}n$
+\end_inset
+
+ and 
+\begin_inset Formula $m_{1}>-n-1$
+\end_inset
+
+ which 
+\series bold
+can't be satisfied simultaneously
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $2m_{1}-n>0$
+\end_inset
+
+,
+ 
+\begin_inset Formula $-n>0$
+\end_inset
+
+ give 
+\begin_inset Formula $m_{1}>\frac{1}{2}n$
+\end_inset
+
+.
+ This will contribute for 
+\begin_inset Formula $n<0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $2m_{1}-n>0$
+\end_inset
+
+,
+ 
+\begin_inset Formula $-m_{1}+n+1>0$
+\end_inset
+
+ give 
+\begin_inset Formula $m_{1}>\frac{1}{2}n$
+\end_inset
+
+ which means 
+\begin_inset Formula $n$
+\end_inset
+
+ must be negative and 
+\begin_inset Formula $\frac{1}{2}n<m_{1}<n+1$
+\end_inset
+
+ which 
+\series bold
+can't be satisfied
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $m_{1}+n+1>0$
+\end_inset
+
+ so 
+\begin_inset Formula $m_{1}>-n-1$
+\end_inset
+
+ which gives points for 
+\begin_inset Formula $n>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $m_{1}+n+1>0$
+\end_inset
+
+,
+ 
+\begin_inset Formula $2m_{2}-n>0$
+\end_inset
+
+.
+ Get 
+\begin_inset Formula $m_{2}>\frac{1}{2}n$
+\end_inset
+
+ and 
+\begin_inset Formula $m_{1}>-n-1$
+\end_inset
+
+ which is 
+\series bold
+impossible
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $-n>0$
+\end_inset
+
+,
+ 
+\begin_inset Formula $m_{1}+n+1>0$
+\end_inset
+
+.
+ 
+\begin_inset Formula $m_{1}>-n-1>-1$
+\end_inset
+
+ so 
+\series bold
+doesn't contribute
+\series default
+.
+\end_layout
+
+\begin_layout Subsubsection*
+Region 2
+\end_layout
+
+\begin_layout Standard
+Take the singular case 
+\begin_inset Formula $m_{1}=0,m_{2}<0$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\eta=\left(\epsilon,1\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\text{Cone}\left(Q_{0,2},Q_{1,1}\right),\text{Cone}\left(Q_{0,2},Q_{2,0}\right),\text{Cone}\left(Q_{0,2},Q_{1,-1}\right),\text{Cone}\left(Q_{-1,1},Q_{1,1}\right),\text{Cone}\left(Q_{-1,1},Q_{2,0}\right),\text{Cone}\left(Q_{-2,0},Q_{1,1}\right).
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection*
