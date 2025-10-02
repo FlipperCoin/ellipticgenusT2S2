@@ -2297,6 +2297,29 @@ Take the singular case
 
 \end_layout
 
+\begin_layout Enumerate
+\begin_inset Formula $2m_{2}-n>0$
+\end_inset
+
+,
+ 
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\prod_{g_{1},g_{2}=2,0,-2}\left(\frac{1}{\theta_{1}\left(x_{1}^{g_{1}}y^{-1};q\right)}\right)^{-1}\left(\frac{1}{\theta_{1}\left(x_{2}^{g_{2}}y^{-1};q\right)}\right)^{-g_{2}-1}\prod_{g_{1},g_{2}=\pm1}\left(\frac{1}{\theta_{1}\left(x_{1}^{g_{1}}x_{2}^{g_{2}}y;q\right)}\right)^{2\left(-g_{2}+2\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection*
 truncation of sum (wrong but prob on the right path,
  I did this before learning JK-Res properly)
@@ -2766,6 +2789,603 @@ The residue is
  & \left(\frac{1}{\theta_{1}\left(x_{1}^{2}y^{-1};q\right)}\right)^{2}\left(\frac{1}{\theta_{1}\left(x_{2}^{2}y^{-1};q\right)}\right)^{2}\left(\frac{1}{\theta_{1}\left(x_{1}x_{2}y;q\right)}\right)^{6}\left(\frac{1}{\theta_{1}\left(x_{1}x_{2}^{-1}y;q\right)}\right)^{2}\left(\frac{1}{\theta_{1}\left(x_{1}^{-1}x_{2}y;q\right)}\right)^{2}
 \end{align*}
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Summary of the results for the case 
+\begin_inset Formula $n=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For the 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ theory compactified with flux 2,
+ we got a theory 
+\begin_inset Formula $\mathcal{T}_{2}\left[A_{1}\right]$
+\end_inset
+
+.
+ This theory has the following symmetries and gauge groups:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="7">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Q_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Q_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $U\left(1\right)_{R}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $U\left(1\right)_{f}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $SU\left(2\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\boldsymbol{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\boldsymbol{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset Formula $\boldsymbol{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\boldsymbol{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\boldsymbol{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\boldsymbol{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $SU\left(2\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\boldsymbol{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\boldsymbol{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset Formula $\boldsymbol{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\boldsymbol{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\boldsymbol{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\boldsymbol{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Table of charges
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This theory depends on a flux 
+\begin_inset Formula $n$
+\end_inset
+
+ for the flavor symmetry.
+ We summarize the result for the partition function for the case 
+\begin_inset Formula $n=1$
+\end_inset
+
+.
+ First,
+ the partition function is given by the expression:
+\begin_inset Formula 
+\begin{align*}
+\mathcal{I}\left(y,q;n\right) & =\frac{1}{4}\sum_{\vec{m}\in\mathbb{Z}}\frac{1}{\left(2\pi\right)^{2}}\int\eta\left(q\right)^{4}\d u_{1}du_{2}\prod_{i=1}^{2}\frac{\theta_{1}\left(x_{i}^{2};q\right)\theta_{1}\left(x_{i}^{-2};q\right)}{\left(i\eta\left(q\right)\right)^{2}}\left(\frac{1}{\theta_{1}\left(y^{-2};q\right)}\right)^{-2\left(2n+1\right)}\\
+ & \prod_{g_{1},g_{2}=2,0,-2}\left(\frac{1}{\theta_{1}\left(x_{1}^{g_{1}}y^{-1};q\right)}\right)^{g_{1}m_{1}-n}\left(\frac{1}{\theta_{1}\left(x_{2}^{g_{2}}y^{-1};q\right)}\right)^{g_{2}m_{2}-n}\prod_{g_{1},g_{2}=\pm1}\left(\frac{1}{\theta_{1}\left(x_{1}^{g_{1}}x_{2}^{g_{2}}y;q\right)}\right)^{2\left(g_{1}m_{1}+g_{2}m_{2}+n+1\right)}\\
+ & =\sum_{\vec{m}\in\mathbb{Z}}\mathcal{I}_{\vec{m}}\left(y,q;n\right)
+\end{align*}
+
+\end_inset
+
+By an appropriate choice of 
+\begin_inset Formula $\eta$
+\end_inset
+
+ in the JK residue,
+ the infinite sum truncates to the set 
+\begin_inset Formula $\left(m_{1},m_{2}\right)\in\left\{ \left(0,0\right),\left(1,0\right),\left(0,1\right),\left(-1,0\right),\left(0,-1\right)\right\} $
+\end_inset
+
+.
+ For 
+\begin_inset Formula $\left(m_{1}m_{2}\right)=\left(0,0\right)$
+\end_inset
+
+,
+ we got at zeroth order in 
+\begin_inset Formula $q$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\mathcal{I}_{\left(0,0\right)}\left(y,q;1\right)=-\frac{(y-1)^{2}}{4y^{3}(y+1)^{4}}\left(y^{8}+4y^{7}+14y^{6}+32y^{5}+38y^{4}+32y^{3}+14y^{2}+4y+1\right)
+\]
+
+\end_inset
+
+For 
+\begin_inset Formula $\left(m_{1}m_{2}\right)=\left(-1,0\right)$
+\end_inset
+
+,
+ we got:
+\begin_inset Formula 
+\begin{align*}
+\mathcal{I}_{\left(-1,0\right)}\left(y,q;1\right) & =\frac{(y-1)^{2}}{4y^{6}(y+1)^{4}}\Big(y^{14}+15y^{13}+122y^{12}+559y^{11}+1659y^{10}+3470y^{9}+5333y^{8}\\
+ & +6141y^{7}+5333y^{6}+3470y^{5}+1659y^{4}+559y^{3}+122y^{2}+15y+1\Big)
+\end{align*}
+
+\end_inset
+
+The partition function 
+\begin_inset Formula $\mathcal{I}_{\vec{m}}\left(y,n\right)$
+\end_inset
+
+ is invariant under the shift 
+\begin_inset Formula $\left(m_{1},m_{2}\right)\mapsto\left(m_{2},m_{1}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(m_{1},m_{2}\right)\mapsto\left(-m_{1},m_{2}\right)$
+\end_inset
+
+.
+ We checked the case 
+\begin_inset Formula $\mathcal{I}_{\left(-1,0\right)}=\mathcal{I}_{\left(0,-1\right)}$
+\end_inset
+
+.
+ Therefore,
+ the final result for the partition function is:
+\begin_inset Formula 
+\begin{align*}
+\mathcal{I}\left(y,q;n=1\right) & =\mathcal{I}_{\left(0,0\right)}\left(y,q;1\right)+4\mathcal{I}_{\left(-1,0\right)}\left(y,q;1\right)\\
+ & =\frac{(y-1)^{2}}{4y^{6}}\left(4y^{10}+44y^{9}+288y^{8}+803y^{7}+1512y^{6}+1804y^{5}+1512y^{4}+803y^{3}+288y^{2}+44y+4\right)
+\end{align*}
+
+\end_inset
+
+Note to ourselves:
+ For completeness,
+ we also have to check the equality 
+\begin_inset Formula $\mathcal{I}_{\left(-1,0\right)}=\mathcal{I}_{\left(1,0\right)}$
 \end_inset
 
 
