@@ -129,6 +129,31 @@
 \end_inset
 
 
+\begin_inset FormulaMacro
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+{\textcolor{red}{#1}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+{\textcolor{blue}{#1}}
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+textcolor{blue}{fdf}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3393,6 +3418,207 @@ Note to ourselves:
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Section*
+Solving analytically for the case 
+\begin_inset Formula $n=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The result is:
+\begin_inset Formula 
+\[
+Z_{n=0}\left(y;q\right)=\text{Res}_{w_{2}=1}\text{Res}_{w_{1}=1}Z_{\text{1-loop}}\left(w_{1},w_{2},y;q\right)
+\]
+
+\end_inset
+
+where,
+\begin_inset Formula 
+\[
+Z_{\text{1-loop}}\left(w_{1},w_{2},y;q\right)=-\frac{\theta_{1}\left(\frac{w_{1}}{w_{2}}\right)\theta_{1}\left(\frac{w_{2}}{w_{1}}\right)\theta_{1}\left(y^{2}\right)^{2}\theta_{1}\left(\frac{y^{2}}{w_{1}w_{2}}\right)\theta_{1}\left(\frac{w_{1}w_{2}}{y^{2}}\right)}{4\theta_{1}\left(w_{1}\right){}^{2}\theta_{1}\left(w_{2}\right){}^{2}\theta_{1}\left(\frac{w_{1}}{y^{2}}\right){}^{2}\theta_{1}\left(\frac{w_{2}}{y^{2}}\right){}^{2}}
+\]
+
+\end_inset
+
+For 
+\begin_inset Formula $f$
+\end_inset
+
+ with no simple zero and 
+\begin_inset Formula $g$
+\end_inset
+
+ has a simple zero,
+ we want to find the residue:
+\begin_inset Formula 
+\[
+\text{Res}_{z=0}\frac{f}{g^{n}}
+\]
+
+\end_inset
+
+We know further that 
+\begin_inset Formula $g=zh$
+\end_inset
+
+ with 
+\begin_inset Formula $h^{(n)}(0)=0$
+\end_inset
+
+ for 
+\begin_inset Formula $n$
+\end_inset
+
+ odd.
+\begin_inset Formula 
+\begin{align*}
+\text{Res}_{z=0}\frac{f}{g^{2}} & =\lim_{z\to0}\partial_{z}\left(z^{2}\frac{f\left(z\right)}{g^{2}\left(z\right)}\right)\\
+ & =\lim_{z\to0}\partial_{z}\left(\frac{f\left(z\right)}{h^{2}\left(z\right)}\right)\\
+ & =\lim_{z\to0}\frac{f'\left(z\right)h^{2}\left(z\right)-f\left(z\right)h\left(z\right)\cancel{h'\left(z\right)}}{h^{4}\left(z\right)}\\
+ & =\lim_{z\to0}\frac{f'\left(z\right)}{h^{2}\left(z\right)}-\frac{f\left(z\right)}{h^{3}\left(z\right)}\\
+ & =\frac{f'\left(0\right)}{h^{2}\left(0\right)}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\text{Res}_{w_{1}=1}Z_{\text{1-loop}}\left(w_{1},w_{2},y;q\right)=\frac{f'\left(0\right)}{h^{2}\left(0\right)}
+\]
+
+\end_inset
+
+For,
+\begin_inset Formula 
+\[
+f(w_{1})=-\frac{\theta_{1}\left(\frac{w_{1}}{w_{2}}\right)\theta_{1}\left(\frac{w_{2}}{w_{1}}\right)\theta_{1}\left(y^{2}\right)^{2}\theta_{1}\left(\frac{y^{2}}{w_{1}w_{2}}\right)\theta_{1}\left(\frac{w_{1}w_{2}}{y^{2}}\right)}{4\theta_{1}\left(w_{2}\right){}^{2}\theta_{1}\left(\frac{w_{1}}{y^{2}}\right){}^{2}\theta_{1}\left(\frac{w_{2}}{y^{2}}\right){}^{2}}
+\]
+
+\end_inset
+
+Let's use the linear definition of the theta function for 
+\begin_inset Formula $w_{i}=e^{iu_{i}}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f'(w_{1}) & =-\frac{\theta_{1}\left(y^{2}\right)^{2}}{4\theta_{1}\left(w_{2}\right){}^{2}\theta_{1}\left(\frac{w_{2}}{y^{2}}\right){}^{2}}\frac{\d}{\d w_{1}}\frac{\theta_{1}\left(\frac{w_{1}}{w_{2}}\right)\theta_{1}\left(\frac{w_{2}}{w_{1}}\right)\theta_{1}\left(\frac{y^{2}}{w_{1}w_{2}}\right)\theta_{1}\left(\frac{w_{1}w_{2}}{y^{2}}\right)}{\theta_{1}\left(\frac{w_{1}}{y^{2}}\right){}^{2}}\\
+ & =-\frac{\theta_{1}\left(y^{2}\right)^{2}}{4\theta_{1}\left(w_{2}\right){}^{2}\theta_{1}\left(\frac{w_{2}}{y^{2}}\right){}^{2}}\frac{\d}{\d w_{1}}\frac{\theta_{1}^{2}\left(\frac{w_{1}}{w_{2}}\right)\theta_{1}^{2}\left(\frac{w_{1}w_{2}}{y^{2}}\right)}{\theta_{1}\left(\frac{w_{1}}{y^{2}}\right){}^{2}}\\
+ & =-\frac{\theta_{1}\left(2v\right)^{2}}{4\theta_{1}\left(u_{2}\right){}^{2}\theta_{1}\left(u_{2}-2v\right){}^{2}}\frac{\d}{\d u_{1}}\frac{\theta_{1}^{2}\left(u_{1}-u_{2}\right)\theta_{1}^{2}\left(u_{1}+u_{2}-2v\right)}{\theta_{1}\left(u_{1}-2v\right){}^{2}}\\
+ & =-\frac{\theta_{1}\left(2v\right)^{2}}{4\theta_{1}\left(u_{2}\right){}^{2}\theta_{1}\left(u_{2}-2v\right){}^{2}}\Biggg[\frac{2\theta_{1}\left(-u_{2}\right)\theta_{1}'\left(-u_{2}\right)\theta_{1}^{2}\left(u_{2}-2v\right)}{\theta_{1}\left(-2v\right){}^{2}}+\frac{\theta_{1}^{2}\left(-u_{2}\right)2\theta_{1}\left(u_{2}-2v\right)\theta_{1}'\left(u_{2}-2v\right)}{\theta_{1}\left(-2v\right){}^{2}}\\
+ & -2\frac{\theta_{1}'\left(-2v\right)\theta_{1}^{2}\left(-u_{2}\right)\theta_{1}^{2}\left(u_{2}-2v\right)}{\theta_{1}\left(-2v\right){}^{3}}\Biggg]\\
+ & =-\frac{\theta_{1}\left(2v\right)^{2}}{2\theta_{1}\left(u_{2}\right){}^{2}\theta_{1}\left(u_{2}-2v\right){}^{2}\theta_{1}\left(-2v\right){}^{2}}\Biggg[\theta_{1}\left(-u_{2}\right)\theta_{1}'\left(-u_{2}\right)\theta_{1}^{2}\left(u_{2}-2v\right)+\theta_{1}^{2}\left(-u_{2}\right)\theta_{1}\left(u_{2}-2v\right)\theta_{1}'\left(u_{2}-2v\right)\\
+ & -\frac{\theta_{1}'\left(-2v\right)\theta_{1}^{2}\left(-u_{2}\right)\theta_{1}^{2}\left(u_{2}-2v\right)}{\theta_{1}\left(-2v\right)}\Biggg]\\
+ & =-\frac{\red{\cancel{\theta_{1}\left(2v\right)^{2}}}\bcancel{\theta_{1}\left(u_{2}-2v\right)}}{2\theta_{1}\left(u_{2}\right){}^{2}\theta_{1}\left(u_{2}-2v\right){}^{\bcancel{2}}\red{\cancel{\theta_{1}\left(-2v\right){}^{2}}}}\Biggg[\theta_{1}\left(-u_{2}\right)\theta_{1}'\left(-u_{2}\right)\theta_{1}\left(u_{2}-2v\right)+\theta_{1}^{2}\left(-u_{2}\right)\theta_{1}'\left(u_{2}-2v\right)\\
+ & -\frac{\theta_{1}'\left(-2v\right)\theta_{1}^{2}\left(-u_{2}\right)\theta_{1}\left(u_{2}-2v\right)}{\theta_{1}\left(-2v\right)}\Biggg]\\
+ & =\frac{\blue{\theta_{1}\left(u_{2}\right)}}{2\theta_{1}\left(u_{2}\right){}^{\blue 2}\theta_{1}\left(u_{2}-2v\right)}\Biggg[\theta_{1}'\left(-u_{2}\right)\theta_{1}\left(u_{2}-2v\right)+\theta_{1}\left(-u_{2}\right)\theta_{1}'\left(u_{2}-2v\right)\\
+ & -\frac{\theta_{1}'\left(-2v\right)\theta_{1}\left(-u_{2}\right)\theta_{1}\left(u_{2}-2v\right)}{\theta_{1}\left(-2v\right)}\Biggg]\\
+ & =\frac{1}{2\theta_{1}\left(u_{2}\right)\theta_{1}\left(u_{2}-2v\right)}\Biggg[\theta_{1}'\left(-u_{2}\right)\theta_{1}\left(u_{2}-2v\right)+\theta_{1}\left(-u_{2}\right)\theta_{1}'\left(u_{2}-2v\right)\\
+ & -\frac{\theta_{1}'\left(-2v\right)\theta_{1}\left(-u_{2}\right)\theta_{1}\left(u_{2}-2v\right)}{\theta_{1}\left(-2v\right)}\Biggg]
+\end{align*}
+
+\end_inset
+
+Therefore,
+\begin_inset Formula 
+\begin{align*}
+\text{Res}_{w_{1}=1}Z_{\text{1-loop}}\left(w_{1},w_{2},y;q\right) & =\frac{f'\left(0\right)}{h^{2}\left(0\right)}\\
+ & =\frac{1}{2\theta_{1}\left(u_{2}\right)\theta_{1}\left(u_{2}-2v\right)}\Biggg[\theta_{1}'\left(-u_{2}\right)\theta_{1}\left(u_{2}-2v\right)+\theta_{1}\left(-u_{2}\right)\theta_{1}'\left(u_{2}-2v\right)\\
+ & -\frac{\theta_{1}'\left(-2v\right)\theta_{1}\left(-u_{2}\right)\theta_{1}\left(u_{2}-2v\right)}{\theta_{1}\left(-2v\right)}\Biggg]\cdot\frac{1}{\left(2\pi\eta^{3}\left(\tau\right)\right)^{2}}\\
+ & =\frac{1}{2\theta_{1}\left(u_{2}-2v\right)}\frac{1}{\left(2\pi\eta^{3}\left(\tau\right)\right)^{2}}\left[\frac{\theta_{1}'\left(-u_{2}\right)}{\theta_{1}\left(u_{2}\right)}\theta_{1}\left(u_{2}-2v\right)-\theta_{1}'\left(u_{2}-2v\right)+\frac{\theta_{1}'\left(-2v\right)\theta_{1}\left(u_{2}-2v\right)}{\theta_{1}\left(-2v\right)}\right]\\
+ & =(*)
+\end{align*}
+
+\end_inset
+
+Now,
+ let's take the second residue:
+\begin_inset Formula 
+\begin{align*}
+\text{Res}_{w_{2}=1}(*) & =\text{Res}_{w_{2}=1}\frac{1}{2\left(2\pi\eta^{3}\left(\tau\right)\right)^{2}}\frac{\theta_{1}'\left(-u_{2}\right)}{\theta_{1}\left(u_{2}\right)}\\
+ & =\frac{1}{2\left(2\pi\eta^{3}\left(\tau\right)\right)^{2}}\frac{2\pi\eta^{3}\left(\tau\right)}{2\pi\eta^{3}\left(\tau\right)}\\
+ & =\frac{1}{2\left(2\pi\eta^{3}\left(\tau\right)\right)^{2}}
+\end{align*}
+
+\end_inset
+
+In summary,
+ we got:
+\begin_inset Formula 
+\[
+Z_{n=0}\left(y;q\right)=\frac{1}{2\left(2\pi\eta^{3}\left(\tau\right)\right)^{2}}
+\]
+
+\end_inset
+
+Now for 
+\begin_inset Formula $n=1$
+\end_inset
+
+,
+ the residue is:
+\begin_inset Formula 
+\[
+Z_{n=1}\left(y;q\right)=\text{Res}_{w_{2}=1}\text{Res}_{w_{1}=1}Z_{\text{1-loop}}^{n=1,\left(0,0\right)}\left(w_{1},w_{2},y;q\right)+4\text{Res}_{w_{2}=1}\text{Res}_{w_{1}=1}Z_{\text{1-loop}}^{n=1,\left(1,0\right)}\left(w_{1},w_{2},y;q\right)
+\]
+
+\end_inset
+
+where,
+\begin_inset Formula 
+\begin{align*}
+Z_{\text{1-loop}}^{n=1,\left(0,0\right)}\left(w_{1},w_{2},y;q\right) & =\frac{\theta_{1}\left(\frac{w_{1}}{w_{2}}\right)\theta_{1}\left(\frac{w_{2}}{w_{1}}\right)\theta_{1}(y)^{2}\theta_{1}\left(y^{2}\right)^{6}\theta_{1}\left(\frac{y}{w_{1}w_{2}}\right)\theta_{1}\left(\frac{y^{2}}{w_{1}w_{2}}\right)\theta_{1}\left(\frac{w_{1}}{w_{2}y}\right)\theta_{1}\left(\frac{w_{2}}{w_{1}y}\right)\theta_{1}\left(\frac{w_{1}w_{2}}{y^{3}}\right)\theta_{1}\left(\frac{w_{1}w_{2}}{y^{2}}\right)}{8\theta_{1}\left(w_{1}\right){}^{4}\theta_{1}\left(w_{2}\right){}^{4}\theta_{1}\left(\frac{w_{1}}{y^{2}}\right){}^{4}\theta_{1}\left(\frac{w_{2}}{y^{2}}\right){}^{4}}\\
+ & =\frac{\theta_{1}^{2}\left(\frac{w_{2}}{w_{1}}\right)\theta_{1}(y)^{2}\theta_{1}\left(y^{2}\right)^{6}\theta_{1}\left(\frac{y}{w_{1}w_{2}}\right)\theta_{1}\left(\frac{y^{2}}{w_{1}w_{2}}\right)\theta_{1}\left(\frac{w_{1}}{w_{2}y}\right)\theta_{1}\left(\frac{w_{2}}{w_{1}y}\right)\theta_{1}\left(\frac{w_{1}w_{2}}{y^{3}}\right)\theta_{1}\left(\frac{w_{1}w_{2}}{y^{2}}\right)}{8\theta_{1}\left(w_{1}\right){}^{4}\theta_{1}\left(w_{2}\right){}^{4}\theta_{1}\left(\frac{w_{1}}{y^{2}}\right){}^{4}\theta_{1}\left(\frac{w_{2}}{y^{2}}\right){}^{4}}
+\end{align*}
+
+\end_inset
+
+We have,
+\begin_inset Formula 
+\[
+\text{Res}_{w_{1}=1}Z_{\text{1-loop}}^{n=1,\left(0,0\right)}\left(w_{1},w_{2},y;q\right)=\left[\frac{f^{(3)}(z)}{h(z)^{4}}-\frac{12f'(z)h''(z)}{h(z)^{5}}\right]_{z=u_{1}\to0}
+\]
+
+\end_inset
+
+for,
+\begin_inset Formula 
+\[
+f\left(u_{1}\right)=\frac{\theta_{1}^{2}\left(\frac{w_{2}}{w_{1}}\right)\theta_{1}(y)^{2}\theta_{1}\left(y^{2}\right)^{6}\theta_{1}\left(\frac{y}{w_{1}w_{2}}\right)\theta_{1}\left(\frac{y^{2}}{w_{1}w_{2}}\right)\theta_{1}\left(\frac{w_{1}}{w_{2}y}\right)\theta_{1}\left(\frac{w_{2}}{w_{1}y}\right)\theta_{1}\left(\frac{w_{1}w_{2}}{y^{3}}\right)\theta_{1}\left(\frac{w_{1}w_{2}}{y^{2}}\right)}{8\theta_{1}\left(w_{2}\right){}^{4}\theta_{1}\left(\frac{w_{1}}{y^{2}}\right){}^{4}\theta_{1}\left(\frac{w_{2}}{y^{2}}\right){}^{4}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f'\left(u_{1}\right)=\frac{\theta_{1}^{2}\left(\frac{w_{2}}{w_{1}}\right)\theta_{1}(y)^{2}\theta_{1}\left(y^{2}\right)^{6}\theta_{1}\left(\frac{y}{w_{1}w_{2}}\right)\theta_{1}\left(\frac{y^{2}}{w_{1}w_{2}}\right)\theta_{1}\left(\frac{w_{1}}{w_{2}y}\right)\theta_{1}\left(\frac{w_{2}}{w_{1}y}\right)\theta_{1}\left(\frac{w_{1}w_{2}}{y^{3}}\right)\theta_{1}\left(\frac{w_{1}w_{2}}{y^{2}}\right)}{8\theta_{1}\left(w_{2}\right){}^{4}\theta_{1}\left(\frac{w_{1}}{y^{2}}\right){}^{4}\theta_{1}\left(\frac{w_{2}}{y^{2}}\right){}^{4}}
+\]
+
+\end_inset
+
+Because:
+\begin_inset Formula 
+\begin{align*}
+\text{Res}_{z=0}\frac{f}{g^{n}} & =\lim_{z\to0}\partial_{z}^{n-1}\left(z^{n}\frac{f\left(z\right)}{g^{n}\left(z\right)}\right)\\
+ & =\lim_{z\to0}\partial_{z}^{n-1}\left(\frac{f\left(z\right)}{h^{n}\left(z\right)}\right)\\
+ & =\lim_{z\to0}f^{(n-1)}\left(z\right)h^{-n}\left(z\right)-n\left(n-1\right)f^{(n-2)}\left(z\right)h'\left(z\right)h^{-n-1}\left(z\right)\\
+ & +...+f\left(z\right)\partial_{z}^{n-1}h^{-n}\left(z\right)\\
+\left\{ n=6\right\} \to & =\lim_{z\to0}\partial_{z}^{5}\left(\frac{f\left(z\right)}{h^{6}\left(z\right)}\right)\\
+ & =\lim_{z\to0}\frac{f^{(5)}\left(z\right)}{h^{6}\left(z\right)}-\#6f^{(4)}\left(z\right)\frac{\cancel{h^{'}\left(z\right)}}{h^{7}\left(z\right)}-\#6f^{(3)}\left(z\right)\frac{h^{''}\left(z\right)h^{7}\left(z\right)-7\cancel{h'\left(z\right)h'\left(z\right)h^{6}\left(z\right)}}{h^{14}\left(z\right)}+...\\
+\text{mathematica}\to & =\frac{f^{(5)}(z)}{h(z)^{6}}-\frac{60f^{(3)}(z)h''(z)}{h(z)^{7}}+5f'(z)\left(\frac{126h''(z)^{2}}{h(z)^{8}}-\frac{6h^{(4)}(z)}{h(z)^{7}}\right)
+\end{align*}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
