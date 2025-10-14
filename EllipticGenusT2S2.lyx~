@@ -3543,8 +3543,8 @@ Now,
 \begin_inset Formula 
 \begin{align*}
 \text{Res}_{w_{2}=1}(*) & =\text{Res}_{w_{2}=1}\frac{1}{2\left(2\pi\eta^{3}\left(\tau\right)\right)^{2}}\frac{\theta_{1}'\left(-u_{2}\right)}{\theta_{1}\left(u_{2}\right)}\\
- & =-\frac{1}{2\left(2\pi\eta^{3}\left(\tau\right)\right)^{2}}\frac{2\pi\eta^{3}\left(\tau\right)}{2\pi\eta^{3}\left(\tau\right)}\\
- & =-\frac{1}{2\left(2\pi\eta^{3}\left(\tau\right)\right)^{2}}
+ & =\frac{1}{2\left(2\pi\eta^{3}\left(\tau\right)\right)^{2}}\frac{2\pi\eta^{3}\left(\tau\right)}{2\pi\eta^{3}\left(\tau\right)}\\
+ & =\frac{1}{2\left(2\pi\eta^{3}\left(\tau\right)\right)^{2}}
 \end{align*}
 
 \end_inset
@@ -3553,7 +3553,7 @@ In summary,
  we got:
 \begin_inset Formula 
 \[
-Z_{n=0}\left(y;q\right)=-\frac{1}{2\left(2\pi\eta^{3}\left(\tau\right)\right)^{2}}
+Z_{n=0}\left(y;q\right)=\frac{1}{2\left(2\pi\eta^{3}\left(\tau\right)\right)^{2}}
 \]
 
 \end_inset
@@ -3615,6 +3615,21 @@ Because:
  & =\lim_{z\to0}\frac{f^{(5)}\left(z\right)}{h^{6}\left(z\right)}-\#6f^{(4)}\left(z\right)\frac{\cancel{h^{'}\left(z\right)}}{h^{7}\left(z\right)}-\#6f^{(3)}\left(z\right)\frac{h^{''}\left(z\right)h^{7}\left(z\right)-7\cancel{h'\left(z\right)h'\left(z\right)h^{6}\left(z\right)}}{h^{14}\left(z\right)}+...\\
 \text{mathematica}\to & =\frac{f^{(5)}(z)}{h(z)^{6}}-\frac{60f^{(3)}(z)h''(z)}{h(z)^{7}}+5f'(z)\left(\frac{126h''(z)^{2}}{h(z)^{8}}-\frac{6h^{(4)}(z)}{h(z)^{7}}\right)
 \end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Bold guess for the final result
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Z_{1-loop}=\#\frac{\theta_{1}\left(y\right)^{-2n}}{\eta^{6}\left(q\right)\theta_{1}\left(y^{2}\right)^{-4n}}
+\]
 
 \end_inset
 
