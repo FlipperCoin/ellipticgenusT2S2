@@ -3633,6 +3633,38 @@ Z_{1-loop}=\#\frac{\theta_{1}\left(y\right)^{-2n}}{\eta^{6}\left(q\right)\theta_
 
 \end_inset
 
+We got until now for rank 2:
+\begin_inset Formula 
+\[
+Z_{n=0}=\frac{1}{\eta^{6}\left(q\right)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Z_{n=-1}=\#\frac{1}{\eta^{6}\left(q\right)}\left(\frac{\theta_{1}\left(y^{2}\right)^{4}}{\theta_{1}\left(y\right)^{2}}\right)^{-1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Z_{n=-2}=\#\frac{1}{\eta^{6}\left(q\right)}\left(\frac{\theta_{1}\left(y^{2}\right)^{4}}{\theta_{1}\left(y\right)^{2}}\right)^{-2}+\left(\text{garbage}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Z_{n=1}=\left(\text{garbage}\right)
+\]
+
+\end_inset
+
 
 \end_layout
 
