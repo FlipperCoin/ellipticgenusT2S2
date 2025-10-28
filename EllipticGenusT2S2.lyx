@@ -4951,5 +4951,21 @@ is the sign which we now know how to compute!
 .
 \end_layout
 
+\begin_layout Section
+Theta identities
+\end_layout
+
+\begin_layout Standard
+Theta identities we used:
+\begin_inset Formula 
+\[
+\theta_{1}\left(\tau|v-\frac{\tau}{2}\right)=-e^{2\pi iv}\theta_{1}\left(\tau|v+\frac{\tau}{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

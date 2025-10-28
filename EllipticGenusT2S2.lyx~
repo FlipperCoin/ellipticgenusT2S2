@@ -4472,7 +4472,7 @@ Z_{n=-1}=\frac{1}{\eta^{9}\left(q\right)}\left(\frac{\theta_{1}\left(y^{2}\right
 
 \begin_inset Formula 
 \[
-Z_{n=-2}=\frac{1}{\eta^{9}\left(q\right)}\frac{\theta_{1}\left(y^{2}\right)^{-12}}{\theta_{1}\left(y\right)^{-6}}+\left(\text{garbage}\right)=\#\frac{1}{\eta^{9}\left(q\right)}\left(\frac{\theta_{1}\left(y^{2}\right)^{2}}{\theta_{1}\left(y\right)}\right)^{-6}+\left(\text{garbage}\right)
+Z_{n=-2}=\frac{1}{\eta^{9}\left(q\right)}\frac{\theta_{1}\left(y^{2}\right)^{-12}}{\theta_{1}\left(y\right)^{-6}}+\left(\text{garbage ?}\right)=\#\frac{1}{\eta^{9}\left(q\right)}\left(\frac{\theta_{1}\left(y^{2}\right)^{2}}{\theta_{1}\left(y\right)}\right)^{-6}+\left(\text{garbage ?}\right)
 \]
 
 \end_inset
@@ -4949,6 +4949,22 @@ is the sign which we now know how to compute!
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Section
+Theta identities
+\end_layout
+
+\begin_layout Standard
+Theta identities we used:
+\begin_inset Formula 
+\[
+\theta_{1}\left(\tau|v-\tau\right)=-e^{2\pi iv}\theta_{1}\left(\tau|v+\tau\right)
+\]
+
+\end_inset
+
+
 \end_layout
 
 \end_body
