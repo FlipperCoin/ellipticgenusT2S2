@@ -4496,6 +4496,84 @@ Z_{n,r}=\#\frac{1}{\eta^{3r}\left(q\right)}\left(\frac{\theta_{1}\left(y^{2}\rig
 \end_layout
 
 \begin_layout Section
+Rank 0
+\end_layout
+
+\begin_layout Standard
+Poles are present when
+\begin_inset Formula 
+\[
+gm-n_{1}-1\geq0\Rightarrow\begin{cases}
+m\geq\frac{1}{\left|g\right|}\left(n_{1}+1\right) & g>0\\
+m\leq\frac{1}{\left|g\right|}\left(-n_{1}-1\right) & g<0
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+gm+\frac{1}{2}n_{1}+n_{2}+1\geq0\Rightarrow\begin{cases}
+m\geq\frac{1}{\left|g\right|}\left(\frac{1}{2}n_{1}+n_{2}+1\right) & g>0\\
+m\leq\frac{1}{\left|g\right|}\left(-\frac{1}{2}n_{1}-n_{2}-1\right) & g<0
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+gm+\frac{1}{2}n_{1}-n_{2}+1\geq0\Rightarrow\begin{cases}
+m\geq\frac{1}{\left|g\right|}\left(\frac{1}{2}n_{1}-n_{2}+1\right) & g>0\\
+m\leq\frac{1}{\left|g\right|}\left(-\frac{1}{2}n_{1}+n_{2}-1\right) & g<0
+\end{cases}
+\]
+
+\end_inset
+
+For 
+\begin_inset Formula $n_{2}=0$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+gm-n_{1}-1\geq0\Rightarrow\begin{cases}
+m\geq\frac{1}{2}\left(n_{1}+1\right) & g>0\\
+m\leq\frac{1}{2}\left(-n_{1}-1\right) & g<0
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+gm+\frac{1}{2}n_{1}+n_{2}+1\geq0\Rightarrow\begin{cases}
+m\geq\frac{1}{2}\left(-\frac{1}{2}n_{1}-1\right) & g>0\\
+m\leq\frac{1}{2}\left(+\frac{1}{2}n_{1}+1\right) & g<0
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+gm+\frac{1}{2}n_{1}-n_{2}+1\geq0\Rightarrow\begin{cases}
+m\geq\frac{1}{2}\left(-\frac{1}{2}n_{1}-1\right) & g>0\\
+m\leq\frac{1}{2}\left(\frac{1}{2}n_{1}+1\right) & g<0
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
 Appendix of formulas
 \end_layout
 
@@ -4959,12 +5037,16 @@ Theta identities
 Theta identities we used:
 \begin_inset Formula 
 \[
-\theta_{1}\left(\tau|v-\tau\right)=-e^{2\pi iv}\theta_{1}\left(\tau|v+\tau\right)
+\theta_{1}\left(\tau|v-\frac{\tau}{2}\right)=-e^{2\pi iv}\theta_{1}\left(\tau|v+\frac{\tau}{2}\right)
 \]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+-
 \end_layout
 
 \end_body
