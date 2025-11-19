@@ -394,7 +394,7 @@ B & \overset{\tau\to\tau+1}{\longrightarrow}\frac{e^{\frac{\pi i}{4}}\left(e^{\f
 
 \begin_inset Formula 
 \begin{align*}
-A & \overset{\tau\to-\frac{1}{\tau}}{\longrightarrow}\frac{1}{\tau}\frac{\sqrt{-i\tau}^{3+10}\left(-i\right)^{10}}{\sqrt{-i\tau}^{11}\left(-i\right)^{11}}\exp\left(\frac{i\pi}{2}\left[-3\left(3u^{2}+6uv+v^{2}\right)\right]\right)
+A & \overset{\tau\to-\frac{1}{\tau}}{\longrightarrow}\frac{1}{\tau}\frac{\sqrt{-i\tau}^{3+10}\left(-i\right)^{10}}{\sqrt{-i\tau}^{11}\left(-i\right)^{11}}\exp\left(\frac{i\pi}{\tau}\left[-3\left(3u^{2}+6uv+v^{2}\right)\right]\right)A
 \end{align*}
 
 \end_inset
@@ -402,7 +402,7 @@ A & \overset{\tau\to-\frac{1}{\tau}}{\longrightarrow}\frac{1}{\tau}\frac{\sqrt{-
 
 \begin_inset Formula 
 \begin{align*}
-B & \overset{\tau\to-\frac{1}{\tau}}{\longrightarrow}\frac{1}{\tau}\frac{\sqrt{-i\tau}^{3+8}\left(-i\right)^{8}}{\sqrt{-i\tau}^{9}\left(-i\right)^{9}}\exp\left(\frac{i\pi}{2}\left[-3\left(3u^{2}+6uv+v^{2}\right)\right]\right)
+B & \overset{\tau\to-\frac{1}{\tau}}{\longrightarrow}\frac{1}{\tau}\frac{\sqrt{-i\tau}^{3+8}\left(-i\right)^{8}}{\sqrt{-i\tau}^{9}\left(-i\right)^{9}}\exp\left(\frac{i\pi}{\tau}\left[-3\left(3u^{2}+6uv+v^{2}\right)\right]\right)B
 \end{align*}
 
 \end_inset
