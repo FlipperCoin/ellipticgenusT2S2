@@ -933,7 +933,7 @@ m & =50
 Hence,
 \begin_inset Formula 
 \[
-4a+6b-2\alpha=k=0
+4a+6b-2\alpha=k=0\implies2a+3b=\alpha
 \]
 
 \end_inset
@@ -941,7 +941,7 @@ Hence,
 
 \begin_inset Formula 
 \[
-\alpha+\beta=m=50
+\alpha+\beta=m=50\implies\beta=50-\alpha
 \]
 
 \end_inset
