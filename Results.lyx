@@ -448,7 +448,15 @@ index
 \end_inset
 
 .
- We can span Jacobi modular forms using sums of 
+ They also obey
+\begin_inset Formula 
+\[
+\phi\left(\tau,z+\lambda\tau+\mu\right)=e^{-2\pi im\left(\lambda^{2}z+2\lambda z\right)}\phi\left(\tau,z\right).
+\]
+
+\end_inset
+
+We can span Jacobi modular forms using sums of 
 \begin_inset Formula 
 \[
 M\left(\tau,z\right)=E_{4}^{a}\left(\tau\right)E_{6}^{b}\left(\tau\right)\phi_{-2,1}^{\alpha}\left(\tau,z\right)\phi_{0,1}^{\beta}\left(\tau,z\right)
@@ -493,6 +501,16 @@ k=4a+6b-2\alpha
 \begin_inset Formula 
 \[
 m=\alpha+\beta
+\]
+
+\end_inset
+
+in this basis,
+ the other transformation gives (probably,
+ didn't check)
+\begin_inset Formula 
+\[
+M\left(\tau,z+\lambda\tau+\mu\right)=e^{-2\pi i\left(\alpha+\beta\right)\left(\lambda^{2}z+2\lambda z\right)}M\left(\tau,z\right)
 \]
 
 \end_inset
@@ -1494,7 +1512,7 @@ Summary of modular properties
 
 \begin_layout Standard
 For 
-\begin_inset Formula $n=1$
+\begin_inset Formula $r=1$
 \end_inset
 
 ,
@@ -1506,25 +1524,25 @@ Z_{n} & \overset{T}{\to}e^{\frac{i\pi}{6}\left(2n+1\right)}Z_{n} & Z_{n} & \over
 \end_inset
 
 For 
-\begin_inset Formula $n=2$
+\begin_inset Formula $r=2$
 \end_inset
 
 ,
 \begin_inset Formula 
 \begin{align*}
-Z_{n} & \overset{T}{\to}e^{\frac{i\pi}{2}\left(n-1\right)}Z_{n} & Z_{n} & \overset{S}{\to}e^{\frac{i\pi}{2}\left(n-1\right)}\tau^{n-3}e^{\frac{i\pi}{\tau}14n}Z_{n}
+Z_{n} & \overset{T}{\to}e^{\frac{i\pi}{2}\left(n-1\right)}Z_{n} & Z_{n} & \overset{S}{\to}e^{\frac{i\pi}{2}\left(n-1\right)}\tau^{n-3}e^{\frac{i\pi}{\tau}14nu^{2}}Z_{n}
 \end{align*}
 
 \end_inset
 
 For 
-\begin_inset Formula $n=3$
+\begin_inset Formula $r=3$
 \end_inset
 
 ,
 \begin_inset Formula 
 \begin{align*}
-Z_{n} & \overset{T}{\to}e^{\frac{3i\pi}{4}\left(n-1\right)}Z_{n} & Z_{n} & \overset{S}{\to}e^{\frac{i\pi}{4}\left(n-1\right)}\tau^{\frac{1}{2}\left(3n-7\right)}e^{\frac{i\pi}{\tau}21n}Z_{n}
+Z_{n} & \overset{T}{\to}e^{\frac{3i\pi}{4}\left(n-1\right)}Z_{n} & Z_{n} & \overset{S}{\to}e^{\frac{i\pi}{4}\left(n-1\right)}\tau^{\frac{1}{2}\left(3n-7\right)}e^{\frac{i\pi}{\tau}21nu^{2}}Z_{n}
 \end{align*}
 
 \end_inset
@@ -1573,6 +1591,123 @@ Appendix - Summary of modular reconstructions
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Modular properties of basic building blocks
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\eta\left(\tau+1\right)=e^{\pi i/12}\eta\left(\tau\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\eta\left(-\frac{1}{\tau}\right)=\sqrt{-i\tau}\eta\left(\tau\right)
+\]
+
+\end_inset
+
+or 
+\begin_inset Formula $\Delta=\eta^{24}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta\left(\tau+1\right)=\Delta\left(\tau\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Delta\left(-\frac{1}{\tau}\right)=\tau^{12}\Delta\left(\tau\right)
+\]
+
+\end_inset
+
+which means weight 
+\begin_inset Formula $k=12$
+\end_inset
+
+ and index 
+\begin_inset Formula $m=0$
+\end_inset
+
+ (obviously,
+ as no 
+\begin_inset Formula $z$
+\end_inset
+
+ dependence).
+\begin_inset Formula 
+\[
+\theta_{1}\left(\tau+1|z\right)=e^{\pi i/4}\theta_{1}\left(\tau,z\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\theta_{1}\left(-\frac{1}{\tau}|\frac{z}{\tau}\right)=-i\sqrt{-i\tau}e^{\frac{\pi iz^{2}}{\tau}}\theta_{1}\left(\tau|z\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\theta_{1}\left(\tau|z+a+b\tau\right)=\left(-1\right)^{a+b}e^{-2\pi ibz-i\pi b^{2}\tau}\theta_{1}\left(\tau|z\right)
+\]
+
+\end_inset
+
+or 
+\begin_inset Formula $\Theta_{1}=\theta_{1}^{8}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Theta_{1}\left(\tau+1|z\right)=\Theta_{1}\left(\tau,z\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Theta_{1}\left(-\frac{1}{\tau}|\frac{z}{\tau}\right)=\tau^{4}e^{\frac{8\pi iz^{2}}{\tau}}\Theta_{1}\left(\tau|z\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Theta_{1}\left(\tau|z+a+b\tau\right)=e^{-2\pi i\cdot4\left(2bz+b^{2}\tau\right)}\Theta_{1}\left(\tau|z\right)
+\]
+
+\end_inset
+
+which means weight 
+\begin_inset Formula $k=4$
+\end_inset
+
+ and index 
+\begin_inset Formula $m=4$
+\end_inset
+
+.
+ 
 \end_layout
 
 \end_body
