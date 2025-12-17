@@ -451,7 +451,7 @@ index
  They also obey
 \begin_inset Formula 
 \[
-\phi\left(\tau,z+\lambda\tau+\mu\right)=e^{-2\pi im\left(\lambda^{2}z+2\lambda z\right)}\phi\left(\tau,z\right).
+\phi\left(\tau,z+\lambda\tau+\mu\right)=e^{-2\pi im\left(\lambda^{2}\tau+2\lambda z\right)}\phi\left(\tau,z\right).
 \]
 
 \end_inset
@@ -510,7 +510,7 @@ in this basis,
  didn't check)
 \begin_inset Formula 
 \[
-M\left(\tau,z+\lambda\tau+\mu\right)=e^{-2\pi i\left(\alpha+\beta\right)\left(\lambda^{2}z+2\lambda z\right)}M\left(\tau,z\right)
+M\left(\tau,z+\lambda\tau+\mu\right)=e^{-2\pi i\left(\alpha+\beta\right)\left(\lambda^{2}\tau+2\lambda z\right)}M\left(\tau,z\right)
 \]
 
 \end_inset

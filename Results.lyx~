@@ -505,6 +505,16 @@ m=\alpha+\beta
 
 \end_inset
 
+in this basis,
+ the other transformation gives (probably,
+ didn't check)
+\begin_inset Formula 
+\[
+M\left(\tau,z+\lambda\tau+\mu\right)=e^{-2\pi i\left(\alpha+\beta\right)\left(\lambda^{2}z+2\lambda z\right)}M\left(\tau,z\right)
+\]
+
+\end_inset
+
 
 \end_layout
 
