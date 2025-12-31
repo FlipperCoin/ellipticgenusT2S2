@@ -1594,6 +1594,73 @@ Appendix - Summary of modular reconstructions
 \end_layout
 
 \begin_layout Section
+Modular properties of derivatives
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\theta_{1}\left(-\frac{1}{\tau}|\frac{z}{\tau}\right)=-i\sqrt{-i\tau}e^{\frac{\pi iz^{2}}{\tau}}\theta_{1}\left(\tau|z\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{1}{\tau}\theta_{1}'\left(-\frac{1}{\tau}|\frac{z}{\tau}\right) & =-i\sqrt{-i\tau}e^{\frac{\pi iz^{2}}{\tau}}\theta_{1}'\left(\tau|z\right)-\frac{2\pi iz}{\tau}i\sqrt{-i\tau}e^{\frac{\pi iz^{2}}{\tau}}\theta_{1}\left(\tau|z\right)\\
+ & =-i\sqrt{-i\tau}e^{\frac{\pi iz^{2}}{\tau}}\theta_{1}'\left(\tau|z\right)+\frac{2\pi z}{\tau}\sqrt{-i\tau}e^{\frac{\pi iz^{2}}{\tau}}\theta_{1}\left(\tau|z\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{\theta_{1}'\left(\tau|-u_{2}\right)}{\theta_{1}\left(\tau|u_{2}\right)}\to\frac{\theta_{1}'\left(\tau|-u_{2}\right)}{\theta_{1}\left(\tau|u_{2}\right)}
+\]
+
+\end_inset
+
+We want to find the modular properties of certain terms analytically.
+ For example we could ask if the single following term is modular:
+\begin_inset Formula 
+\[
+-\frac{1}{16\pi^{4}\eta^{12}}\frac{\Theta\left(\frac{1}{2}\right)^{2}\Theta\left(v+\frac{1}{2}\right)^{4}\Theta\left(2v+\frac{1}{2}\right)^{2}\Theta'(v)^{2}}{4\Theta(v)^{2}\Theta(2v)^{10}}
+\]
+
+\end_inset
+
+We know that all the terms that contain:
+\begin_inset Formula 
+\begin{align*}
+E & =\theta_{1}\left(\frac{1}{2}\right)^{2}\theta_{1}\left(v+\frac{1}{2}\right)^{4}\theta_{1}\left(2v+\frac{1}{2}\right)^{2}\theta_{1}'(v)^{2}\\
+ & =\theta_{2}\left(0\right)^{2}\theta_{2}\left(v\right)^{2}\theta_{2}\left(2v\right)^{2}\theta_{1}'(v)^{2}\\
+\end{align*}
+
+\end_inset
+
+Modular property of 
+\begin_inset Formula $\theta_{1}\left(v+\frac{1}{2}|\tau\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\theta_{1}\left(v+\frac{1}{2}|\tau\right) & \to\theta_{1}\left(\frac{v}{\tau}+\frac{1}{2}|-\frac{1}{\tau}\right)\\
+ & =\theta_{1}\left(\frac{2v+\tau}{2\tau}|-\frac{1}{\tau}\right)\\
+ & =-i\sqrt{-i\tau}e^{\frac{\pi i}{\tau}\left(\frac{\tau+2v}{2}\right)^{2}}\theta_{1}\left(\frac{2v+\tau}{2}|\tau\right)\\
+ & =-i\sqrt{-i\tau}e^{\frac{\pi i}{4\tau}\left(\tau^{2}+4v\tau+4v^{2}\right)}\theta_{1}\left(v+\frac{1}{2}\tau|\tau\right)\\
+ & =-i\sqrt{-i\tau}e^{\frac{\pi i}{4\tau}\left(\tau^{2}+4v\tau+4v^{2}\right)}ie^{-i\pi\left(v+\frac{\tau}{4}\right)}\theta_{4}\left(v|\tau\right)\\
+ & =\sqrt{-i\tau}e^{\frac{\pi i}{\tau}v^{2}}\theta_{4}\left(v|\tau\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
 Modular properties of basic building blocks
 \end_layout
 
@@ -1708,6 +1775,18 @@ which means weight
 
 .
  
+\end_layout
+
+\begin_layout Standard
+We use the identities of 1502.04603:
+\begin_inset Formula 
+\[
+\theta_{1}\left(u+\frac{1}{2}\right)=\theta_{2}\left(u\right)
+\]
+
+\end_inset
+
+
 \end_layout
 
 \end_body
