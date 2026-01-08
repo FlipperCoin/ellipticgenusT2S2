@@ -1635,7 +1635,160 @@ We know that all the terms that contain:
 \begin_inset Formula 
 \begin{align*}
 E & =\theta_{1}\left(\frac{1}{2}\right)^{2}\theta_{1}\left(v+\frac{1}{2}\right)^{4}\theta_{1}\left(2v+\frac{1}{2}\right)^{2}\theta_{1}'(v)^{2}\\
- & =\theta_{1}\left(\frac{1}{2}\right)^{2}\theta_{1}\left(v+\frac{1}{2}\right)^{4}\theta_{1}\left(2v+\frac{1}{2}\right)^{2}\theta_{1}'(v)^{2}
+ & =\theta_{2}\left(0\right)^{2}\theta_{2}\left(v\right)^{2}\theta_{2}\left(2v\right)^{2}\theta_{1}'(v)^{2}\\
+\end{align*}
+
+\end_inset
+
+Modular property of 
+\begin_inset Formula $\theta_{1}\left(v+\frac{1}{2}|\tau\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\theta_{1}\left(v+\frac{1}{2}|\tau\right) & \to\theta_{1}\left(\frac{v}{\tau}+\frac{1}{2}|-\frac{1}{\tau}\right)\\
+ & =\theta_{1}\left(\frac{2v+\tau}{2\tau}|-\frac{1}{\tau}\right)\\
+ & =-i\sqrt{-i\tau}e^{\frac{\pi i}{\tau}\left(\frac{\tau+2v}{2}\right)^{2}}\theta_{1}\left(\frac{2v+\tau}{2}|\tau\right)\\
+ & =-i\sqrt{-i\tau}e^{\frac{\pi i}{4\tau}\left(\tau^{2}+4v\tau+4v^{2}\right)}\theta_{1}\left(v+\frac{1}{2}\tau|\tau\right)\\
+ & =-i\sqrt{-i\tau}e^{\frac{\pi i}{4\tau}\left(\tau^{2}+4v\tau+4v^{2}\right)}ie^{-i\pi\left(v+\frac{\tau}{4}\right)}\theta_{4}\left(v|\tau\right)\\
+ & =\sqrt{-i\tau}e^{\frac{\pi i}{\tau}v^{2}}\theta_{4}\left(v|\tau\right)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\theta_{1}\left(u+\tau\right) & =-e^{-\pi i(2u+\tau)}\theta_{1}\left(u\right)\\
+\theta_{1}\left((u-\frac{\tau}{2})+\tau\right) & =-e^{-\pi i(2(u-\frac{\tau}{2})+\tau)}\theta_{1}\left(u-\frac{\tau}{2}\right)\\
+\theta_{1}\left(u+\frac{\tau}{2}\right) & =-e^{-\pi i(2u)}\theta_{1}\left(u-\frac{\tau}{2}\right)\\
+\theta_{1}\left(u-\frac{\tau}{2}\right) & =-e^{2u\pi i}\theta_{1}\left(u+\frac{\tau}{2}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Brainstorming of the result
+\end_layout
+
+\begin_layout Standard
+Let's try to simplify the expression for rank 2 and 
+\begin_inset Formula $n=-2$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{align*}
+Z & =-\frac{\theta_{1}\left(v\right)^{4}}{32\eta^{6}\pi^{2}\theta_{1}\left(2v\right)^{8}}-\sum_{i=2,3,4}\frac{\theta_{i}(0)^{2}\theta_{i}(v)^{4}\theta_{i}(2v)^{2}\theta_{1}'(v)^{2}}{16\pi^{4}\eta^{12}\theta(v)^{2}\theta(2v)^{10}}\\
+ & +\frac{\theta_{i}(0)^{2}\theta_{i}(v)^{4}\theta_{i}(2v)^{2}\theta_{1}'(v)\theta_{1}'(2v)}{8\pi^{4}\eta^{12}\theta_{1}(v)\theta_{1}(2v)^{11}}-\frac{\theta_{i}(0)^{2}\theta_{i}(v)^{4}\theta_{i}(2v)^{2}\theta_{1}'(2v)^{2}}{16\pi^{4}\eta^{12}\theta_{1}(2v)^{12}}\\
+ & +\frac{\theta_{i}(0)^{2}\theta_{i}(2v)\theta_{i}(v)^{4}\theta_{1}'(2v)\theta_{i}'(2v)}{16\pi^{4}\eta^{12}\theta_{1}(2v)^{11}}-\frac{\theta_{i}(0)^{2}\theta_{i}(2v)\theta_{i}(v)^{4}\theta_{1}'(v)\theta_{i}'(2v)}{16\pi^{4}\eta^{12}\theta_{1}(v)\theta_{1}(2v)^{10}}\\
+ & -\frac{\theta_{i}(0)^{2}\theta_{i}(v)^{4}\theta_{i}'(2v)^{2}}{128\pi^{4}\eta^{12}\theta_{1}(2v)^{10}}-\frac{\theta_{i}(0)^{2}\theta_{i}(2v)^{2}\theta_{i}(v)^{2}\theta_{i}'(v)^{2}}{64\pi^{4}\eta^{12}\theta_{1}(2v)^{10}}\\
+ & -\frac{\theta_{i}(0)\theta_{i}''(0)\theta_{i}(2v)^{2}\theta_{i}(v)^{4}}{128\pi^{4}\eta^{12}\theta_{1}(2v)^{10}}-\frac{\theta_{i}(0)^{2}\theta_{i}(2v)\theta_{i}(v)^{4}\theta_{i}''(2v)}{128\pi^{4}\eta^{12}\theta_{1}(2v)^{10}}+\frac{\theta_{i}(0)^{2}\theta_{i}(2v)^{2}\theta_{i}(v)^{3}\theta_{i}''(v)}{64\pi^{4}\eta^{12}\theta_{1}(2v)^{10}}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+Z & =-\frac{\theta_{1}\left(v\right)^{4}}{32\eta^{6}\pi^{2}\theta_{1}\left(2v\right)^{8}}+\frac{1}{\pi^{4}\eta^{12}\theta(2v)^{10}}\sum_{i=2,3,4}-\frac{\theta_{i}(0)^{2}\theta_{i}(v)^{4}\theta_{i}(2v)^{2}\theta_{1}'(v)^{2}}{16\theta(v)^{2}}\\
+ & +\frac{\theta_{i}(0)^{2}\theta_{i}(v)^{4}\theta_{i}(2v)^{2}\theta_{1}'(v)\theta_{1}'(2v)}{8\theta_{1}(v)\theta_{1}(2v)}-\frac{\theta_{i}(0)^{2}\theta_{i}(v)^{4}\theta_{i}(2v)^{2}\theta_{1}'(2v)^{2}}{16\theta_{1}(2v)^{2}}\\
+ & +\frac{\theta_{i}(0)^{2}\theta_{i}(2v)\theta_{i}(v)^{4}\theta_{1}'(2v)\theta_{i}'(2v)}{16\theta_{1}(2v)}-\frac{\theta_{i}(0)^{2}\theta_{i}(2v)\theta_{i}(v)^{4}\theta_{1}'(v)\theta_{i}'(2v)}{16\theta_{1}(v)}\\
+ & -\frac{\theta_{i}(0)^{2}\theta_{i}(v)^{4}\theta_{i}'(2v)^{2}}{128}-\frac{\theta_{i}(0)^{2}\theta_{i}(2v)^{2}\theta_{i}(v)^{2}\theta_{i}'(v)^{2}}{64}\\
+ & -\frac{\theta_{i}(0)\theta_{i}''(0)\theta_{i}(2v)^{2}\theta_{i}(v)^{4}}{128}-\frac{\theta_{i}(0)^{2}\theta_{i}(2v)\theta_{i}(v)^{4}\theta_{i}''(2v)}{128}+\frac{\theta_{i}(0)^{2}\theta_{i}(2v)^{2}\theta_{i}(v)^{3}\theta_{i}''(v)}{64}
+\end{align*}
+
+\end_inset
+
+Let's define 
+\begin_inset Formula $p\left(v\right)=\frac{\theta_{1}'(v)}{\theta_{1}(v)}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+Z & =-\frac{\theta_{1}\left(v\right)^{4}}{32\eta^{6}\pi^{2}\theta_{1}\left(2v\right)^{8}}+\frac{1}{\pi^{4}\eta^{12}\theta(2v)^{10}}\sum_{i=2,3,4}-\frac{\theta_{i}(0)^{2}\theta_{i}(v)^{4}\theta_{i}(2v)^{2}p(v)^{2}}{16}\\
+ & +\frac{\theta_{i}(0)^{2}\theta_{i}(v)^{4}\theta_{i}(2v)^{2}p(v)p(2v)}{8}-\frac{\theta_{i}(0)^{2}\theta_{i}(v)^{4}\theta_{i}(2v)^{2}p(2v)^{2}}{16}\\
+ & +\frac{\theta_{i}(0)^{2}\theta_{i}(2v)\theta_{i}(v)^{4}p(2v)\theta_{i}'(2v)}{16}-\frac{\theta_{i}(0)^{2}\theta_{i}(2v)\theta_{i}(v)^{4}p(v)\theta_{i}'(2v)}{16}\\
+ & -\frac{\theta_{i}(0)^{2}\theta_{i}(v)^{4}\theta_{i}'(2v)^{2}}{128}-\frac{\theta_{i}(0)^{2}\theta_{i}(2v)^{2}\theta_{i}(v)^{2}\theta_{i}'(v)^{2}}{64}\\
+ & -\frac{\theta_{i}(0)\theta_{i}''(0)\theta_{i}(2v)^{2}\theta_{i}(v)^{4}}{128}-\frac{\theta_{i}(0)^{2}\theta_{i}(2v)\theta_{i}(v)^{4}\theta_{i}''(2v)}{128}+\frac{\theta_{i}(0)^{2}\theta_{i}(2v)^{2}\theta_{i}(v)^{3}\theta_{i}''(v)}{64}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+Z & =-\frac{\theta_{1}\left(v\right)^{4}}{32\eta^{6}\pi^{2}\theta_{1}\left(2v\right)^{8}}+\sum_{i=2,3,4}\frac{\theta_{i}(0)^{2}}{\pi^{4}\eta^{12}\theta(2v)^{10}}\\
+ & \times\Bigg(-\frac{\theta_{i}(v)^{4}\theta_{i}(2v)^{2}p(v)^{2}}{16}\\
+ & +\frac{\theta_{i}(v)^{4}\theta_{i}(2v)^{2}p(v)p(2v)}{8}-\frac{\theta_{i}(v)^{4}\theta_{i}(2v)^{2}p(2v)^{2}}{16}\\
+ & +\frac{\theta_{i}(2v)\theta_{i}(v)^{4}p(2v)\theta_{i}'(2v)}{16}-\frac{\theta_{i}(2v)\theta_{i}(v)^{4}p(v)\theta_{i}'(2v)}{16}\\
+ & -\frac{\theta_{i}(v)^{4}\theta_{i}'(2v)^{2}}{128}-\frac{\theta_{i}(2v)^{2}\theta_{i}(v)^{2}\theta_{i}'(v)^{2}}{64}\\
+ & -\frac{\frac{\theta_{i}''(0)}{\theta_{i}(0)}\theta_{i}(2v)^{2}\theta_{i}(v)^{4}}{128}-\frac{\theta_{i}(2v)\theta_{i}(v)^{4}\theta_{i}''(2v)}{128}+\frac{\theta_{i}(2v)^{2}\theta_{i}(v)^{3}\theta_{i}''(v)}{64}\Bigg)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+Z & =-\frac{\theta_{1}\left(v\right)^{4}}{32\eta^{6}\pi^{2}\theta_{1}\left(2v\right)^{8}}+\sum_{i=2,3,4}\frac{\theta_{i}(0)^{2}}{\pi^{4}\eta^{12}\theta(2v)^{10}}\\
+ & \times\Bigg(-\frac{1}{16}\theta_{i}(v)^{4}\theta_{i}(2v)^{2}\left(p(v)-p(2v)\right)^{2}\\
+ & +\frac{1}{16}\theta_{i}(v)^{4}\theta_{i}(2v)\theta_{i}'(2v)\left(p(2v)-p(v)\right)\\
+ & -\frac{\theta_{i}(v)^{4}\theta_{i}'(2v)^{2}}{128}-\frac{\theta_{i}(2v)^{2}\theta_{i}(v)^{2}\theta_{i}'(v)^{2}}{64}\\
+ & -\frac{\frac{\theta_{i}''(0)}{\theta_{i}(0)}\theta_{i}(2v)^{2}\theta_{i}(v)^{4}}{128}-\frac{\theta_{i}(2v)\theta_{i}(v)^{4}\theta_{i}''(2v)}{128}+\frac{\theta_{i}(2v)^{2}\theta_{i}(v)^{3}\theta_{i}''(v)}{64}\Bigg)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+Z & =-\frac{\theta_{1}\left(v\right)^{4}}{32\eta^{6}\pi^{2}\theta_{1}\left(2v\right)^{8}}+\sum_{i=2,3,4}\frac{\theta_{i}(0)^{2}\theta_{i}(v)^{2}}{\pi^{4}\eta^{12}\theta(2v)^{10}}\\
+ & \times\Bigg(-\frac{1}{16}\theta_{i}(v)^{2}\theta_{i}(2v)^{2}\left(p(v)-p(2v)\right)^{2}\\
+ & +\frac{1}{64}\theta_{i}(v)^{2}\frac{\d}{\d v}\left(\theta_{i}(2v)^{2}\right)\left(p(2v)-p(v)\right)\\
+ & -\frac{\theta_{i}(v)^{2}\theta_{i}'(2v)^{2}}{128}-\frac{\theta_{i}(2v)^{2}\theta_{i}'(v)^{2}}{64}\\
+ & -\frac{\theta_{i}(2v)\theta_{i}(v)^{2}\theta_{i}''(2v)}{128}+\frac{\theta_{i}(2v)^{2}\theta_{i}(v)\theta_{i}''(v)}{64}-\frac{\theta_{i}''(0)}{\theta_{i}(0)}\frac{\theta_{i}(2v)^{2}\theta_{i}(v)^{2}}{128}\Bigg)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+Z & =-\frac{\theta_{1}\left(v\right)^{4}}{32\eta^{6}\pi^{2}\theta_{1}\left(2v\right)^{8}}+\sum_{i=2,3,4}\frac{\theta_{i}(0)^{2}\theta_{i}(v)^{2}}{\pi^{4}\eta^{12}\theta(2v)^{10}}\\
+ & \times\Bigg(-\frac{1}{16}\theta_{i}(v)^{2}\theta_{i}(2v)^{2}\left(p(v)-p(2v)\right)^{2}\\
+ & +\frac{1}{64}\theta_{i}(v)^{2}\frac{\d}{\d v}\left(\theta_{i}(2v)^{2}\right)\left(p(2v)-p(v)\right)\\
+ & -\frac{\theta_{i}(v)^{2}}{256}\frac{\d}{\d v}\left(\theta_{i}'(2v)\theta_{i}(2v)\right)-\frac{\theta_{i}(2v)^{2}\theta_{i}'(v)^{2}}{64}\\
+ & +\frac{\theta_{i}(2v)^{2}\theta_{i}(v)\theta_{i}''(v)}{64}-\frac{\theta_{i}''(0)}{\theta_{i}(0)}\frac{\theta_{i}(2v)^{2}\theta_{i}(v)^{2}}{128}\Bigg)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+Z & =-\frac{\theta_{1}\left(v\right)^{4}}{32\eta^{6}\pi^{2}\theta_{1}\left(2v\right)^{8}}+\sum_{i=2,3,4}\frac{\theta_{i}(0)^{2}\theta_{i}(v)^{4}}{\pi^{4}\eta^{12}\theta(2v)^{10}}\\
+ & \times\Bigg(-\frac{1}{16}\theta_{i}(2v)^{2}\left(p(v)-p(2v)\right)^{2}\\
+ & -\frac{1}{64}\frac{\d}{\d v}\left(\theta_{i}(2v)^{2}\right)\left(p(v)-p(2v)\right)\\
+ & -\frac{1}{256}\frac{\d}{\d v}\left(\theta_{i}'(2v)\theta_{i}(2v)\right)\\
+ & +\frac{\theta_{i}(2v)^{2}}{64}\left(\frac{\d}{\d v}\left(\frac{\theta_{i}'(v)}{\theta_{i}(v)}\right)-\frac{1}{2}\frac{\d}{\d v}\left(\frac{\theta_{i}'(v)}{\theta_{i}(v)}\right)|_{v=0}\right)\Bigg)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+Z & =-\frac{\theta_{1}\left(v\right)^{4}}{32\eta^{6}\pi^{2}\theta_{1}\left(2v\right)^{8}}+\sum_{i=2,3,4}\frac{\theta_{i}(0)^{2}\theta_{i}(v)^{4}\theta_{i}(2v)^{2}}{\pi^{4}\eta^{12}\theta(2v)^{10}}\\
+ & \times\Bigg(-\frac{1}{16}\left(p(v)-p(2v)\right)^{2}\\
+ & -\frac{1}{16}\frac{\theta_{i}'(2v)}{\theta_{i}(2v)}\left(p(v)-p(2v)\right)\\
+ & -\frac{1}{128}\left(\frac{\theta_{i}''(2v)}{\theta_{i}(2v)}+\frac{\theta_{i}'(2v)^{2}}{\theta_{i}(2v)^{2}}\right)\\
+ & +\frac{1}{64}\left(p_{i}'\left(v\right)-\frac{1}{2}p_{i}'\left(0\right)\right)\Bigg)
 \end{align*}
 
 \end_inset
