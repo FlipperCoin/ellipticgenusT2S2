@@ -153,7 +153,8 @@ For flux
 \begin_inset Formula $T_{r}^{2}$
 \end_inset
 
- we get the following quiver theory in 4D
+ we get the quiver theory in 4D depicted in Figure 1.
+ 
 \begin_inset Float figure
 placement document
 alignment document
@@ -250,8 +251,7 @@ There is a large group of flavor symmetries.
 
  etc.
  There are also different possible choices for the R-symmetry charge.
- Spelling out the field contents explicitly,
- take for example 
+ Table 1 spells out the matter contents explicitly for the example of 
 \begin_inset Formula $r=3$
 \end_inset
 
@@ -1015,7 +1015,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Field contents of the 
+Matter contents of the 
 \begin_inset Formula $A_{1}$
 \end_inset
 
@@ -1045,7 +1045,7 @@ The Elliptic Genus
 \end_layout
 
 \begin_layout Subsection
-General Integral
+The Formula
 \end_layout
 
 \begin_layout Standard
@@ -1053,8 +1053,9 @@ We consider a torus with modular parameter
 \begin_inset Formula $\tau=\tau_{1}+i\tau_{2}$
 \end_inset
 
- and flavor holonomy 
-\begin_inset Formula $v=\oint_{t}A^{f}-\tau\oint_{s}A^{f}$
+,
+ with flavor and gauge holonomies 
+\begin_inset Formula $v=\oint_{t}A^{f}-\tau\oint_{s}A^{f},\quad u_{i}=\oint_{t}A_{i}-\tau\oint_{s}A_{i}$
 \end_inset
 
  where 
@@ -1067,9 +1068,42 @@ We consider a torus with modular parameter
 
  are the temporal and spatial cycles.
  
+\begin_inset Formula $A_{i}$
+\end_inset
+
+ is the gauge field for 
+\begin_inset Formula $SU\left(2\right)_{i},i=1,...,r$
+\end_inset
+
+ while 
+\begin_inset Formula $A^{f}$
+\end_inset
+
+ is the background flavor gauge field for the 
+\begin_inset Formula $U\left(1\right)_{F}$
+\end_inset
+
+ we consider.
+ Also define
 \begin_inset Formula 
 \[
-y=e^{2\pi iv},\quad q=e^{2\pi i\tau}
+x_{i}=e^{2\pi iu_{i}},\quad y=e^{2\pi iv},\quad q=e^{2\pi i\tau}
+\]
+
+\end_inset
+
+Denote the partition function as for a theory reduced on 
+\begin_inset Formula $T_{r}^{2}$
+\end_inset
+
+ and with additional 
+\begin_inset Formula $n$
+\end_inset
+
+ flux on the sphere as
+\begin_inset Formula 
+\[
+Z_{T^{2}\times S^{2}}^{r,n}\left(y,q\right)
 \]
 
 \end_inset
@@ -1078,7 +1112,7 @@ We can compute the
 \begin_inset Formula $T^{2}\times S^{2}$
 \end_inset
 
- partition function using the method mentioned in [].
+ partition function using the method mentioned in [benini].
  They dimensionally reduce on the 
 \begin_inset Formula $S^{2}$
 \end_inset
@@ -1092,7 +1126,7 @@ We can compute the
  we need to calculate the following Jeffrey-Kirwan residue
 \begin_inset Formula 
 \[
-Z=\frac{1}{2^{r}}\int\eta\left(q\right)^{2r}\left(idu\right)^{r}
+Z_{T^{2}\times S^{2}}^{r,n}\left(y,q\right)=\frac{1}{2^{r}}\sum_{\vec{m}\in\mathbb{Z}^{r}}\int\eta\left(q\right)^{2r}\left(idu\right)^{r}\left(\prod_{i=1}^{r}\frac{\theta_{1}\left(x_{i}^{2};q\right)\theta_{1}\left(x_{i}^{-2};q\right)}{\left(i\eta\left(q\right)\right)^{2}}\right)Z_{\varphi}Z_{q}Z_{Q}
 \]
 
 \end_inset
@@ -1100,12 +1134,29 @@ Z=\frac{1}{2^{r}}\int\eta\left(q\right)^{2r}\left(idu\right)^{r}
 where
 \begin_inset Formula 
 \[
-f\left(\right)=\left(\frac{i\eta\left(q\right)}{\theta_{1}\left(y;q\right)}\right)
+Z_{\varphi}=\prod_{g=-2,0,2}f\left(g\hat{e}_{i},-1,1\right),\quad Z_{q}=f\left(\vec{0},-2,2\right),\quad Z_{Q}=\prod_{g_{1},g_{2}=-1,1}f\left(g_{1}\hat{e}_{i}+g_{2}\hat{e}_{i+1},-2,2\right)
 \]
 
 \end_inset
 
+and
+\begin_inset Formula 
+\[
+f\left(\vec{g},a,q_{r}\right)=\left(\frac{i\eta\left(q\right)}{\theta_{1}\left(x^{g}y^{a};q\right)}\right)^{an+\vec{g}\cdot\vec{m}-q_{r}+1}
+\]
 
+\end_inset
+
+where 
+\begin_inset Formula $x^{g}$
+\end_inset
+
+ is 
+\begin_inset Formula $\prod_{i=1}^{r}x_{i}^{g_{i}}$
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Subsection
